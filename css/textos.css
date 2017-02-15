@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Neuton');
+
+div.cajatexto{
+  margin: 30px;
+  background-color: #fffcfc;
+  color:black;
+  border: 0px solid black;
+  opacity: 0.95;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+    box-shadow: 8px 8px 10px #aaa;
+font-family: 'Neuton', serif;
+    font-size: 100%;
+  text-align: left;
+  margin-left: -2em; 
+  margin-right: -2em; 
+
+text-indent: 1em 
+}

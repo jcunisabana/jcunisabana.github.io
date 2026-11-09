@@ -1,249 +1,663 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>J.C. Espejo-Serna</title>
-		 <meta name="keywords" content="Filosofía juan camilo espejo serna mente philosophy mind">
-  <meta name="description" content=" filosofía juan camilo espejo serna">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  
-  <meta property="og:title" content="J.C. Espejo-Serna">
-	<meta property="og:type" content="cv">
-	<meta property="og:url" content="">
-	<meta property="og:site_name" content="">
-	<meta property="og:description" content="">
-		<meta charset="utf-8" />
-		<!--		inicio collapse-->
-		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
-		
-		<!--		fin collapse-->
- <!--    google analytics-->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Conexiones Colombia</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Mesa de juego: línea del tiempo arriba, jugada en medio, mano abajo. Estilo Kandinsky (guiño a Sobre blanco II, 1923): fondo blanco roto, negro como estructura, color puro en dosis pequeñas, esquinas rectas, sin sombras. */
+:root{
+  --bg:#E9E7E1; --surface:#F6F4EF; --soft:#DFDCD4; --line:#C9C4BA; --rule:#B9B4A9; --ink:#1A1A1A; --text2:#3B3833; --muted:#4A463F; --label:#8A3A1E; --accent:#1A1A1A; --on-accent:#F6F4EF; --accent2:#D9482B; --gold:#C98B2E; --ok:#6B5D35; --bad:#A4502E; --yellow:#E8C23A; --red:#D9482B; --violet:#5B4FA0; --olive:#6B5D35; --ochre:#C98B2E; --rust:#A4502E; --sky:#7FA9C9; --slate:#5E6070;
+  --display:"Jost", "Futura", "Century Gothic", sans-serif;
+  --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --cw:176px; --ch:268px;
+}
+:root{color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:20px 48px}
+.wrap{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+.wrap>*{min-width:0}
+h1,h2,h3{font-weight:400;margin:0;text-wrap:balance}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 
-  ga('create', 'UA-74338484-2', 'auto');
-  ga('send', 'pageview');
+/* Encabezado */
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.h1-ia{font-family:var(--mono);font-size:.42em;letter-spacing:.12em;vertical-align:.55em;border:1px solid var(--ink);border-radius:3px;padding:2px 6px;margin-left:6px}
+.brand h1{font-family:var(--display);font-size:clamp(2.2rem,6vw,3.2rem);line-height:1}
+.brand p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--mono);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.meta b{font-weight:500;color:var(--ink)}
+.player{display:flex;align-items:center;gap:8px;font-size:.95rem}
+.player input{border:0;border-bottom:1px solid var(--line);background:transparent;padding:2px 4px;min-width:0;width:15rem;max-width:60vw}
 
-</script>
-		<link rel="stylesheet" href="assets/css/main.css" />
-      
+/* Secciones */
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.sec-h h2{font-family:var(--display);font-size:1.45rem}
+.hint{color:var(--muted);font-size:.9rem;margin:0}
+.eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
+/* Línea del tiempo */
+.rail{overflow-x:auto;padding:14px 4px 18px;border:1px solid var(--line);background:var(--surface);border-radius:4px;position:relative}
+.rail-inner{display:flex;align-items:center;gap:6px;min-width:min-content;padding:0 6px;position:relative}
+.rail-inner::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px dashed var(--line);z-index:0}
+.rail-ends{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.72rem;color:var(--muted);margin-top:6px;letter-spacing:.06em}
+.slot{position:relative;z-index:1;flex:0 0 auto;width:10px;height:var(--ch);border:0;background:transparent;padding:0;cursor:default}
+.slot.on{width:40px;cursor:pointer;border:1px dashed var(--muted);border-radius:4px;background:var(--bg);color:var(--muted);font-size:1.3rem}
+.slot.on:hover{border-style:solid;color:var(--ink);border-color:var(--ink)}
 
-	</head>
-	<body>
+/* Fichas */
+.card{position:relative;z-index:1;flex:0 0 auto;width:var(--cw);height:var(--ch);perspective:900px;border:0;padding:0;background:none;cursor:pointer;text-align:left}
+.card .in{position:absolute;inset:0;transition:transform .5s ease;transform-style:preserve-3d}
+.card.flipped .in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:10px 10px 9px;display:flex;flex-direction:column;gap:4px;overflow:hidden}
+.face.b{transform:rotateY(180deg);background:var(--soft)}
+.face .cat{font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.face .ini{font-family:var(--display);font-size:3.1rem;line-height:1;margin:auto 0 0;color:var(--ink);opacity:.9}
+.face .nm{font-family:var(--display);font-size:1.02rem;line-height:1.15;text-wrap:balance}
+.face .side{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:auto}
+.face .yr{font-family:var(--mono);font-size:1.6rem;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.face .fd{font-size:.78rem;color:var(--muted);line-height:1.25}
+.card.pending .face{border:1.5px solid var(--ink);box-shadow:0 0 0 4px var(--soft)}
+.card.sel{transform:translateY(-6px)}
+.card.sel .face{border:1.5px solid var(--ink);box-shadow:0 8px 0 -4px var(--line)}
+.card.inrange .face{box-shadow:inset 0 0 0 3px var(--ink)}
+.card.dim{opacity:.45}
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+.face .pic{display:block;width:calc(100% + 20px);margin:-10px -10px 4px;height:66%;flex:0 0 auto;object-fit:contain;border-bottom:1px solid var(--line);background:var(--soft)}
+.face .pic.sm{height:42%}
+.reading.has-pic{grid-template-columns:1fr;gap:16px}
+.reading .rtext{display:grid;gap:6px;min-width:0}
+.rpic{margin:0;display:grid;gap:6px}
+.rpic img{display:block;max-width:100%;width:auto;max-height:min(72vh,820px);height:auto;margin:0 auto;border:1px solid var(--line);border-radius:2px}
+.rtext{max-width:72ch}
+.credit{font-size:.74rem;color:var(--muted);line-height:1.35;margin:0}
+.credit a{color:inherit}
+.rpic .credit{text-align:center}
+@media (max-width:560px){.rpic img{max-height:60vh}}
 
-<!-- One -->
-<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-down">
-<div class="content">
-<h1>Juan Camilo <br>Espejo-Serna</h1>
-<p class="major"> Filósofo interesado en la ontología de lo mental, la forma de llevar las discusiones filosóficas y la docencia de la filosofía.
-Profesor Asistente en la <a href="https://www.unisabana.edu.co/facultaddefilosofiaycienciashumanas/">Facultad de Filosofía y Ciencias Humanas</a>  de la  <a href="https://www.unisabana.edu.co">Universidad de la Sabana</a>.
+/* Línea del tiempo con imágenes grandes: mismo alto que la imagen de la Cara B */
+:root{--H:min(62vh,560px)}
+.card.big{--HL:calc(var(--H) / 2);width:clamp(170px, calc(var(--HL) * var(--ar)), min(380px, 70vw));height:calc(var(--HL) + 128px)}
+.card.big .face .pic,.card.big .face .pic.sm{height:var(--HL)}
+.card.big .face .nm{font-size:1.12rem}
+.card.big .face.b .yr{font-size:1.5rem}
+.rail .slot{height:calc(var(--H) / 2 + 128px)}
+.rpic img{max-height:var(--H)}
+@media (max-width:520px){:root{--H:min(48vh,340px)}}
+.bigview{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;gap:10px;padding:max(12px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(12px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px))}
+.bigview[hidden]{display:none}
+.big-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.big-t{font-family:var(--display);font-size:clamp(1.2rem,2.4vw,1.8rem)}
+@media (max-width:600px){.big-bar .hint{display:none}}
+.big-grid{flex:1;min-height:0;display:grid;gap:clamp(6px,1vw,12px)}
+.bcard{display:flex;flex-direction:column;min-height:0;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden;cursor:pointer;padding:0;text-align:left}
+.bcard .bimg{flex:1;min-height:0;background:var(--soft);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bcard .bimg img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.bcard .bimg .ini{font-family:var(--display);font-size:clamp(2rem,6vw,5rem);color:var(--muted)}
+.bcard .btx{padding:6px 10px 8px;display:grid;gap:2px}
+.bcard{position:relative}
+.bcard .bn{position:absolute;top:4px;left:4px;font-family:var(--mono);font-size:.7rem;background:var(--surface);color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 5px}
+.bcard .byr{font-family:var(--mono);font-weight:500;font-size:clamp(.85rem,1.5vw,1.45rem);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bcard.open .btx{overflow:auto}
+.bcard .bnm{font-family:var(--display);font-size:clamp(.85rem,1.35vw,1.2rem);line-height:1.15;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.bcard .bdesc{display:none;font-size:clamp(.78rem,1.05vw,.95rem);line-height:1.35;color:var(--ink)}
+.bcard.open .bdesc{display:block}
+.bcard.open .bimg{flex:0 1 45%}
+.mini-btn{border:1px solid var(--line);background:var(--surface);border-radius:4px;padding:4px 10px;cursor:pointer;font-size:.88rem}
+.mini-btn:hover{border-color:var(--ink)}
+.mapzone{flex:1;min-height:0;display:flex;gap:10px}
+.mapzone[hidden]{display:none}
+.big-grid[hidden]{display:none}
+@media (max-width:700px){.mapzone{flex-direction:column}}
+.bigmap{flex:1;min-height:0;min-width:0;position:relative;border:1px solid var(--line);border-radius:4px;background:var(--bg);overflow:hidden}
+.bigmap[hidden]{display:none}
+.bigmap svg{position:absolute;inset:0;width:100%;height:100%}
+.bigmap .land{fill:var(--soft);stroke:var(--muted);stroke-width:.5}
+.bigmap .sea{fill:var(--surface);stroke:var(--muted);stroke-width:1}
+.bigmap .grat{fill:none;stroke:var(--line);stroke-width:.8}
+.bigmap .route{fill:none;stroke:var(--ink);stroke-width:1.6;opacity:.75}
+.bigmap .arrow{fill:var(--ink)}
+.pin{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:none;padding:0;cursor:pointer;z-index:2}
+.pin .stack{position:relative;width:64px;height:58px}
+.pin .stack img,.pin .stack .ph{position:absolute;width:52px;height:52px;object-fit:cover;border:2px solid var(--surface);border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,.35);background:var(--soft)}
+.pin .stack .ph{display:grid;place-items:center;font-family:var(--display);font-size:1.4rem;color:var(--muted)}
+.pin .nums{font-family:var(--mono);font-size:.72rem;background:var(--ink);color:var(--surface);border-radius:10px;padding:1px 7px;white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis}
+.pin .plc{font-size:.7rem;color:var(--muted);background:var(--surface);padding:0 4px;border-radius:3px;white-space:nowrap;max-width:140px;overflow:hidden;text-overflow:ellipsis}
+.pin.on .nums{outline:2px solid var(--ink);outline-offset:2px}
+.map-info{flex:0 0 340px;overflow:auto;background:var(--surface);border:1px solid var(--ink);border-radius:4px;padding:10px 12px;display:grid;gap:8px;align-content:start}
+@media (max-width:700px){.map-info{flex:0 0 auto;max-height:38%}}
+.map-info[hidden]{display:none}
+.map-info .it{display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:center}
+.map-info .it img,.map-info .it .ph{width:44px;height:44px;object-fit:cover;border-radius:3px;background:var(--soft)}
+.map-info .it b{font-family:var(--mono);font-weight:500}
+.map-mars{position:absolute;right:10px;top:10px;font-size:.72rem;color:var(--muted)}
+.feat{position:relative;z-index:1;flex:0 0 auto;width:clamp(300px, calc(var(--H) * 0.75 * var(--ar,1) + 0px), min(560px, 88vw));min-width:min(340px,88vw);max-width:min(560px,88vw);background:var(--surface);border:2px solid var(--ink);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.feat.bad{border-style:dashed}
+.feat .fpic{display:block;width:100%;height:calc(var(--H) * .75);object-fit:contain;background:var(--soft);border-bottom:1px solid var(--line)}
+.feat .ftx{padding:12px 14px 14px;display:grid;gap:4px}
+.feat .fyr{font-family:var(--mono);font-size:1.7rem;font-weight:500;line-height:1}
+.feat .fnm{font-family:var(--display);font-size:1.3rem;line-height:1.15}
+.feat .ffd{font-size:.85rem;color:var(--muted)}
+.feat p{margin:4px 0 0;font-size:1rem;line-height:1.45}
+.rail-inner{align-items:center}
+.grp{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px;background:var(--surface);border:1px solid var(--line);border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:2;justify-content:center}
+.grp .tg{display:grid;gap:4px}
+.grp .plc{width:100%;font-size:.68rem;color:var(--muted);text-align:center;white-space:nowrap;line-height:1.2}
+.mt{position:relative;width:var(--t);height:var(--t);padding:0;border:1px solid var(--line);border-radius:3px;background:var(--soft);cursor:pointer;overflow:hidden}
+.mt img{width:100%;height:100%;object-fit:cover;display:block}
+.mt .ph{display:grid;place-items:center;height:100%;font-family:var(--display);color:var(--muted)}
+.mt .n{position:absolute;left:0;top:0;font-family:var(--mono);font-size:.66rem;line-height:1;padding:2px 4px;background:var(--ink);color:var(--surface);border-bottom-right-radius:3px}
+.mt.on{outline:3px solid var(--ink);outline-offset:1px;z-index:1}
+.bigmap .tick{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+.bigmap .dot{fill:var(--ink)}
+.map-info .ipic{width:100%;max-height:42vh;object-fit:contain;background:var(--soft);border-radius:3px}
+.map-info .fyr{font-family:var(--mono);font-size:1.6rem;font-weight:500;line-height:1}
+.map-info .fnm{font-family:var(--display);font-size:1.25rem;line-height:1.15}
+.map-info p{margin:2px 0 0;line-height:1.45}
+.detail{margin-top:12px}
+.detail .t{font-family:var(--display);font-size:1.15rem}
+.detail p{margin:4px 0 0}
 
-</p><ul class="actions vertical">
-<li>
-	<a href="#perfil" class="button big  smooth-scroll-middle">Perfil</a>
-	<a href="#docencia" class="button big  smooth-scroll-middle">Docencia</a>
-	<a href="#cita" class="button big  smooth-scroll-middle">Agendar cita</a>
-    
-    <br>
-	
+/* Mano */
+.hand{display:flex;flex-wrap:wrap;gap:12px}
+.hand .card{cursor:pointer}
+.hand .card[disabled]{cursor:default}
 
-</li>
-							</ul>
-						</div>
-<div class="image">
-<img src="images/4.jpg" alt="" />
-</div>
-					</section>
+/* Turno */
+.turn{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:16px clamp(14px,3vw,24px);display:grid;gap:12px;max-width:100%}
+.turn>*{max-width:100%}
+.steps{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--muted);padding:4px 10px 4px 6px;border:1px solid var(--line);border-radius:999px}
+.steps li span{font-family:var(--mono);font-size:.75rem;width:1.4em;height:1.4em;display:inline-grid;place-items:center;border-radius:50%;border:1px solid var(--line)}
+.steps li.now{color:var(--ink);border-color:var(--ink)}
+.steps li.now span{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.steps li.done{color:var(--ink)}
+.steps li.done span{border-color:var(--ink)}
+.stage{display:grid;gap:12px;max-width:72ch}
+.stage h3{font-family:var(--display);font-size:1.5rem}
+.stage p{margin:0}
+.q{font-family:var(--display);font-style:italic;font-size:1.2rem}
+textarea{width:100%;min-height:6.5rem;resize:vertical;border:1px solid var(--line);border-radius:4px;background:var(--bg);padding:10px 12px;line-height:1.45}
+textarea:focus{border-color:var(--ink);outline:none}
+.count{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.count.ok{color:var(--ok)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--surface);border-radius:4px;padding:8px 16px;cursor:pointer}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink)}
+.reading{border:1px solid var(--line);border-radius:4px;background:var(--soft);padding:16px 18px;display:grid;gap:6px}
+.reading .yr{font-family:var(--mono);font-size:2rem;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.reading .t{font-family:var(--display);font-size:1.35rem}
+.reading .fd{color:var(--muted);font-size:.92rem}
+.reading p{margin:4px 0 0;font-size:1.05rem}
+.tip{border-left:2px solid var(--line);padding:2px 0 2px 12px;color:var(--ink)}
+.tip .eyebrow{display:block;margin-bottom:2px}
+.verdict{font-family:var(--display);font-size:1.4rem;display:flex;gap:10px;align-items:baseline}
+.verdict .mk{font-family:var(--mono);font-size:1.1rem}
+.verdict .right{display:block;margin-top:4px}
+.verdict .note{display:block;margin-top:6px;font-family:var(--body);font-size:.62em;color:var(--muted)}
+.verdict.good .mk{color:var(--ok)} .verdict.bad .mk{color:var(--bad)}
+.check{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.check input{margin-top:.3em;accent-color:var(--ink);width:1.05rem;height:1.05rem;flex:0 0 auto}
 
-<!-- Two -->
-              
-<section class="banner style1 orient-right content-align-left image-position-center fullscreen onload-image-fade-right" id="perfil">	<div class="content">
-          <h2>Perfil</h2>
+/* Paneles */
+details{border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;font-family:var(--display);font-size:1.3rem;list-style:none;display:flex;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";font-family:var(--mono);font-size:1rem;width:1.2em;color:var(--muted)}
+details[open] summary::before{content:"–"}
+.panel{padding:8px 0 4px 1.9rem;max-width:72ch;display:grid;gap:10px}
+.panel ol,.panel ul{margin:0;padding-left:1.2rem;display:grid;gap:4px}
+.ind{display:grid;gap:6px}
+.ind h4{font-weight:400;margin:6px 0 0;font-size:.95rem;color:var(--muted)}
+.ind .check{font-size:.95rem}
+.ind .check small{color:var(--muted);font-style:italic}
+.record{min-height:16rem;font-family:var(--mono);font-size:.82rem}
+.sel-mazo{border:1px solid var(--line);border-radius:4px;background:var(--surface);padding:6px 8px}
+.confirm{display:none;gap:8px;align-items:center;flex-wrap:wrap;font-size:.92rem}
+.confirm.on{display:flex}
+@media (prefers-reduced-motion: reduce){.card .in{transition:none}}
+@media (max-width:520px){:root{--cw:140px;--ch:216px}.face .ini{font-size:2.5rem}.face .nm{font-size:.9rem}}
 
-    <p>¡Hola! Soy profesor asistente de la Universidad de la Sabana, con doctorado en filosofía de la  Universidad de Warwick (Inglaterra) y maestría en filosofía de la mente de la misma universidad.</p> 
-    <p>En mi investigación doctoral examiné la noción de acción y actividad inteligente. En mi tesis doctoral defiendo la importancia de la idea de que los ejercicios de agencia inteligentes no son meras manifestaciones no-mentales de lo mental sino uno de los elementos básicos que componen nuestra mente. Actualmente trabajo sobre la relación entre el enactivismo y teorías del sentido común en la filosofía de la percepción respecto a la ontología de lo mental que proponen. </p>
+/* ---- Estilo Kandinsky ---- */
+*{border-radius:0!important;box-shadow:none!important}
+.mt .n,.bcard .bn{border-radius:0!important}
+body{font-size:17px;line-height:1.6;color:var(--ink)}
+h1,h2,h3,.brand h1,.sec-h h2,summary,.big-t,.verdict,.feat .fnm,.map-info .fnm,.face .nm,.bcard .bnm,.stage h3,.detail .t{font-family:var(--display);font-weight:600;letter-spacing:-.01em}
+.brand h1{font-size:clamp(2.6rem,7vw,4rem);line-height:1.05}
+.brand p{color:var(--text2)}
+header{border-bottom:0;padding-bottom:22px;position:relative}
+header::after{content:"";position:absolute;left:0;bottom:0;width:64px;height:4px;background:var(--ink);transform:rotate(-5deg);transform-origin:left center}
+.meta{gap:6px}
+.meta span{background:transparent;border:1px solid var(--line);padding:2px 10px;font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;color:var(--muted)}
+.meta b{color:var(--ink)}
+.player input{border-bottom:2px solid var(--ink)}
+.player input:focus{border-bottom-color:var(--red)}
+.eyebrow,.face .cat,.feat .ftx .eyebrow,.map-info .eyebrow{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--label)}
+.hint{color:var(--muted)}
+/* marcadores de sección: círculo, triángulo, rombo, media luna */
+.sec-h h2{display:flex;align-items:center;gap:12px;font-size:1.6rem}
+.sec-h h2::before{content:"";flex:0 0 auto;width:12px;height:12px;background:none;transform:none}
+#h-linea::before{border:3px solid var(--ink);border-radius:999px!important;width:14px;height:14px}
+#h-mano::before{width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:14px solid var(--yellow)}
+#d-reglas summary::before{content:"";width:11px;height:11px;background:var(--red);transform:rotate(45deg);margin-right:4px}
+summary{font-size:1.3rem}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.rail{background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--ink);padding:18px 6px 22px}
+.rail-inner::before{border-top:1px solid var(--rule);opacity:1}
+.rail-ends{font-family:var(--mono);color:var(--label);letter-spacing:.12em}
+.face{border:1px solid var(--line);background:var(--surface)}
+.face.b{background:var(--surface)}
+.face .yr,.feat .fyr,.map-info .fyr,.bcard .byr{font-family:var(--mono);font-weight:500}
+.card .face{border-top:4px solid var(--cat,var(--ink))}
+[data-cat="Obra de arte"]{--cat:var(--red)}
+[data-cat="Idea"]{--cat:var(--violet)}
+[data-cat="Evento histórico"]{--cat:var(--ochre)}
+[data-cat="Invento"]{--cat:var(--sky)}
+[data-cat="Personaje"]{--cat:var(--olive)}
+[data-cat="Hecho"]{--cat:var(--ochre)}
+[data-cat="Actor armado"]{--cat:var(--rust)}
+[data-cat="Paz y justicia"]{--cat:var(--sky)}
+[data-cat="Memoria y arte"]{--cat:var(--violet)}
+[data-cat="Resistencia"]{--cat:var(--olive)}
+.face .pic{border-bottom:1px solid var(--line);background:var(--soft)}
+.hand .card:not([disabled]):hover .face{border-color:var(--ink)}
+.card.sel .face{border:2px solid var(--ink);border-top:4px solid var(--cat,var(--ink))}
+.slot.on{border:1px dashed var(--ink);background:transparent;color:var(--ink);font-family:var(--mono)}
+.slot.on:hover{border-style:solid;background:var(--ink);color:var(--surface)}
+.feat{border:2px solid var(--ink);border-top:6px solid var(--olive);background:var(--surface)}
+.feat.bad{border:2px dashed var(--ink);border-top:6px solid var(--red)}
+.feat.ok .ftx .eyebrow{color:var(--ok)}
+.feat.bad .ftx .eyebrow{color:var(--bad)}
+.feat .fpic{background:var(--soft)}
+.feat p,.map-info p{color:var(--text2)}
+.turn{border:1px solid var(--line);border-top:4px solid var(--ink);background:var(--surface)}
+.turn:has(.verdict.good){border-top-color:var(--olive)}
+.turn:has(.verdict.bad){border-top-color:var(--red)}
+.verdict{font-size:1.25rem;font-weight:500}
+.verdict.good .mk{color:var(--ok)}
+.verdict.bad .mk{color:var(--bad)}
+.verdict .note{font-family:var(--body);font-weight:400;color:var(--muted)}
+.q{font-family:var(--display);font-weight:500;font-style:normal}
+.btn{background:var(--ink);border:2px solid var(--ink);color:var(--on-accent);padding:8px 18px;font-weight:600;filter:none}
+.btn:hover:not(:disabled){background:var(--red);border-color:var(--red);color:#fff;filter:none}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--on-accent);border-color:var(--ink)}
+.mini-btn{border:2px solid var(--ink);background:transparent;color:var(--ink);font-weight:600}
+.mini-btn:hover{background:var(--ink);color:var(--on-accent)}
+.sel-mazo{border:2px solid var(--ink);background:var(--surface)}
+details{border-top:2px solid var(--ink)}
+summary::before{color:var(--ink)}
+.confirm span{color:var(--bad)}
+.credit,.credit a{color:var(--muted)}
+.h1-ia{border:2px solid var(--ink);color:var(--ink);font-family:var(--mono)}
+.rt input{accent-color:var(--red)}
+/* pantalla grande y mapa */
+.bigview{background:var(--bg)}
+.bcard{border:1px solid var(--line);border-top:4px solid var(--cat,var(--ink));background:var(--surface)}
+.bcard:hover{border-color:var(--ink)}
+.bcard .bn{background:var(--ink);color:var(--surface)}
+.bigmap{background:var(--bg);border:1px solid var(--line)}
+.bigmap .sea{fill:var(--surface);stroke:var(--ink);stroke-width:3}
+.bigmap .grat{stroke:var(--rule);stroke-width:.8}
+.bigmap .land{fill:var(--soft);stroke:var(--rule);stroke-width:.8;stroke-linejoin:round}
+.bigmap .nb{fill:var(--bg);stroke:var(--line);stroke-width:.6}
+.bigmap .sea{stroke-width:2}
+.bigmap .route{stroke:var(--red);opacity:.9;stroke-width:1.8}
+.bigmap .arrow{fill:var(--red)}
+.bigmap .dot{fill:var(--red)}
+.bigmap .tick{stroke:var(--ink);opacity:.5}
+.grp{border:1px solid var(--ink);border-top:4px solid var(--ochre);background:var(--surface)}
+.grp .plc{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--label)}
+.mt{border:1px solid var(--line)}
+.mt .n{background:var(--ink);color:var(--surface)}
+.mt.on{outline:3px solid var(--red)}
+.map-info{border:1px solid var(--line);border-top:4px solid var(--violet);background:var(--surface)}
+.big-bar .btn{padding:5px 12px;font-size:.92rem}
+</style>
 
-    <p>En Colombia, he enseñado en la  Universidad Nacional, la Universidad Autónoma, la Universidad de los Andes y la Universidad de la Sabana, donde he dictado cursos de lógica, Descartes, Hume, causalidad, introducción a la filosofía para estudiantes de diversas carreras, historia y filosofía de la ciencia, filosofía de la percepción y metodología de la investigación filosófica. </p>
-    
-    <font size="4"> 
-    <a href="http://scienti.colciencias.gov.co:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001340487">CVLAC</a> ::
-    <a href="https://orcid.org/0000-0002-1717-6630">ORCID</a> :: <a href="https://twitter.com/EspejoSerna">TWITTER</a>
-    </font>
-							
-						</div>
-						<div class="image">
-							<img src="images/me.jpeg" alt="" />
-						</div>
-        <h1></h1>
-
-					</section>
-
-
- 
-<!-- Six -->
-    
-
-<!--
-            
-<section class="spotlight style1  orient-left content-align-left image-position-center halfscreen ">
-  <div class="content">
-      <h2>Docencia</h2>
-  </div>
-  <div class="image">
-    <img src="img/libros.gif" alt="Alternate text" />
-  </div>
-</section>    
-                
--->
-<section class="spotlight style5 orient-left content-align-left onscroll-image-fade-in" id="docencia">
-    <div class="content" >
-
-    &nbsp;
-
-    <h2>Docencia </h2>
-        <p><a href="#cursos" class="smooth-scroll-middle">Aquí</a> podrá encontrar las páginas de los cursos y seminarios que estaré dictando este semestre. (Las páginas de semestres pasados están 
-        <a href="semestrespasados.html">aquí</a>.) </p>
- </div>   	
-    <div class="image">
-							<img src="images/4.jpg" alt="" />
-						</div>
-    </section>
-
-<div class="inner">
- 
-<div class="gallery style1 medium" id="cursos">
-  
-    	
-<article>
-    <a href="../philandfilm/" class="image">
-      <img src="../philandfilm/img/cursosbase.jpg" alt="" /></a>
-<div class="caption">
-    <h3>Philosophy and Film</h3>
-<p>Curso de pregrado en la Universidad de la Sabana sobre filosofía en y sobre el cine. (En inglés.) </p>
- <ul class="actions">
-    <li><span class="button small"><a href="../philandfilm/">Ver página del curso</a></span></li>
-</ul>
-</div>
-    </article>
-
-
-<article>
-    <a href="../filociencia/" class="image">
-      <img src="img/HFC.gif" alt="" />
-    </a>
-    <div class="caption">
-        <h3>Historia y filosofía de la ciencia</h3>
-        <p>Curso de pregrado en la Universidad de la Sabana sobre historia y filosofía de la ciencia.</p>
-        <ul class="actions">
-            <li><span class="button small"><a href="../filociencia/">Ver página del curso</a></span></li>
-        </ul>    
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1>Conexiones <span class="h1-ia">Colombia</span></h1>
+      <p>Cultura, Arte y Lenguaje · historia de Colombia y conflicto armado · <span id="sub-mazo"></span></p>
     </div>
-  </article>  			
-			<article>
+    <div class="row" style="gap:10px 22px">
+      <label class="player" for="nombre">Jugador <input id="nombre" autocomplete="name" placeholder="Nombre y código"></label>
+      <div class="meta" id="meta"></div>
+    </div>
+  </header>
 
+  <section aria-labelledby="h-linea">
+    <div class="sec-h">
+      <h2 id="h-linea">Línea del tiempo</h2>
+      <div class="row" style="gap:10px"><p class="hint" id="rail-hint"></p><button class="mini-btn" id="b-big">Pantalla grande</button></div>
+    </div>
+    <div class="rail" id="rail"><div class="rail-inner" id="rail-inner"></div></div>
+    <div class="rail-ends"><span>← ANTES</span><span>DESPUÉS →</span></div>
+    <div class="detail" id="detail" hidden></div>
+  </section>
 
-    <a href="../MIF/" class="image">
-      <img src="../MIF/img/cursosbase.jpg" alt="" /></a>
-<div class="caption">
-<h2>Metodología de la investigación filosófica</h2>
-<p>Curso de pregrado en la Universidad de la Sabana sobre la elaboración de un proyecto para la monografía de grado.</p>
-<ul class="actions">
-    <li><span class="button small"><a href="../MIF">Ver página del curso</a></span></li>
-</ul>
-</div>
-</article>					
-							</div>    
-    
-        
-    
-    
-    
- 
+  <section class="turn" id="turn" aria-live="polite"></section>
 
-	</div>		
+  <section aria-labelledby="h-mano">
+    <div class="sec-h">
+      <h2 id="h-mano">Su mano</h2>
+      <p class="hint" id="hand-hint"></p>
+    </div>
+    <div class="hand" id="hand"></div>
+  </section>
 
-				<!-- Seven -->
-<!--
-<section class="wrapper style1 align-center">
-<div class="inner medium">
-<h2>Get in touch</h2>
-<form method="post" action="#">
-<div class="field half first">
-<label for="name">Name</label>
-<input type="text" name="name" id="name" value="" />
-</div>
-<div class="field half">
-<label for="email">Email</label>
-<input type="email" name="email" id="email" value="" />
-</div>
-<div class="field">
-<label for="message">Message</label>
-<textarea name="message" id="message" rows="6"></textarea>
-</div>
-<ul class="actions">
-<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-</ul>
-</form>
+  <details id="d-reglas">
+    <summary>Cómo se juega</summary>
+    <div class="panel">
+      <ol>
+        <li>Toque una ficha de su mano y luego un hueco (+) de la línea. Izquierda es antes; derecha es después.</li>
+        <li>La ficha se voltea sola. Lea en voz alta su Cara B, acierte o falle.</li>
+        <li>Si acierta, se queda en la línea. Si falla, la ficha se pone en su lugar correcto de la línea y usted toma dos fichas del mazo.</li>
+      </ol>
+      <p>Gana cuando su mano queda vacía. Solo cuenta la fecha de la Cara B; en los rangos (1509–1511) cuenta el primer año; «c.» se toma como fecha exacta; con el mismo año, la ficha puede ir a cualquier lado. Puede voltear las fichas de la línea cuando quiera.</p>
+      <p>Mazo basado en <i>Diez propuestas para el estudio de la historia reciente de Colombia, con énfasis en el conflicto armado</i> (Comisión de la Verdad y otros, Bogotá, 2022), más las fichas de Colombia del mazo de historia general. Detrás de cada ficha hay personas reales: léalas con respeto por las víctimas.</p>
+    </div>
+  </details>
 
-</div>
-</section>
--->
-
-				<!-- Footer -->
-                            
-<section class="spotlight style2  orient-right content-align-left image-position-center halfscreen " id="cita">
-  <div class="content">
-      <h3>Agendar cita</h3>
-    Para pedir una cita y reunirnos en la Universidad de la Sabana, mándeme por favor un correo electrónico con el asunto "Para pedir una cita" (sin comillas) y siga las instrucciones en la respuesta automática.
+  <div class="row" style="justify-content:flex-end">
+    <select id="mazo" hidden><option value="Colombia">Colombia</option></select>
+    <button class="btn ghost" id="nueva">Nueva partida</button>
+    <div class="confirm" id="confirm"><span>Se perderá la partida actual.</span><button class="btn" id="si-nueva">Empezar de nuevo</button><button class="btn ghost" id="no-nueva">Seguir jugando</button></div>
   </div>
-  <div class="image">
-    <img src="img/meeting.png" alt="Alternate text" />
-  </div>
-</section>                
+</div>
 
-                
-                
-                
-                
-                
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-<!--
-							<ul class="icons">
-								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
--->
-							<p>&copy; Juan Camilo Espejo-Serna. Diseño HTML y CSS: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
+<div class="bigview" id="big" hidden role="dialog" aria-modal="true" aria-labelledby="big-t">
+  <div class="big-bar"><span class="big-t" id="big-t"></span><span class="hint">Toque una ficha para leer su explicación.</span><label class="rt" id="rt-wrap" hidden><input type="checkbox" id="map-route" checked> Recorrido</label><button class="btn ghost" id="big-explore">Explorar todas las fichas</button><button class="btn ghost" id="big-mode">Ver mapa</button><button class="btn ghost" id="big-close">Cerrar</button></div>
+  <div class="big-grid" id="big-grid"></div>
+  <div class="mapzone" id="mapzone" hidden><div class="bigmap" id="bigmap"><svg id="map-svg" aria-hidden="true"></svg><div id="map-pins"></div></div><div class="map-info" id="map-info" hidden></div></div>
+</div>
+<script>
+const CARDS = [];
 
-			</div>
+const CARDS_COL = [
+{n:"La Guerra de los Mil Días",c:"Hecho",y:1899,f:"1899–1902",l:"Palonegro, Santander",t:"Guerra civil entre liberales y conservadores que dejó decenas de miles de muertos y un país empobrecido. Terminó con los tratados de Neerlandia y Wisconsin; un año después, en 1903, Panamá se separó de Colombia."},
+{n:"La masacre de las bananeras",c:"Hecho",y:1928,f:"6 de diciembre de 1928",l:"Ciénaga, Magdalena",t:"Tropas del Ejército dispararon contra trabajadores que estaban en huelga contra la United Fruit Company y reclamaban derechos laborales básicos. Nunca se supo cuántas personas murieron; Jorge Eliécer Gaitán denunció la masacre en el Congreso."},
+{n:"El Bogotazo",c:"Hecho",y:1948,f:"9 de abril de 1948",l:"Bogotá",t:"El asesinato del líder liberal Jorge Eliécer Gaitán desató una revuelta que destruyó buena parte del centro de Bogotá. Agudizó La Violencia entre liberales y conservadores, que ya se vivía en el campo."},
+{n:"El Frente Nacional",c:"Paz y justicia",y:1958,f:"1958–1974",l:"Bogotá",t:"Pacto entre liberales y conservadores, acordado en Benidorm y Sitges (España) y aprobado en el plebiscito de 1957: se turnaron la presidencia y se repartieron los cargos públicos. Redujo la violencia entre partidos, pero cerró la participación a otras fuerzas políticas."},
+{n:"«Violencia», de Alejandro Obregón",c:"Memoria y arte",y:1962,f:"1962",l:"Bogotá",t:"Pintura que ganó el Salón Nacional de Artistas: el cuerpo de una mujer embarazada sin vida se confunde con un paisaje gris. Es una de las obras con las que el arte colombiano nombró la época de La Violencia."},
+{n:"Marquetalia y el origen de las FARC",c:"Actor armado",y:1964,f:"1964",l:"Marquetalia, Planadas, Tolima",t:"Una operación militar contra un núcleo de autodefensas campesinas en el sur del Tolima dio origen a la guerrilla que en 1966 tomó el nombre de Fuerzas Armadas Revolucionarias de Colombia (FARC)."},
+{n:"El nacimiento del ELN",c:"Actor armado",y:1964,f:"4 de julio de 1964",l:"San Vicente de Chucurí, Santander",t:"Un grupo de 16 hombres, varios de ellos formados en Cuba, fundó el Ejército de Liberación Nacional en una vereda de Santander. En 1965 hizo su primera acción pública, la toma de Simacota."},
+{n:"El Ejército Popular de Liberación (EPL)",c:"Actor armado",y:1967,f:"1967",l:"Alto Sinú, Córdoba",t:"Guerrilla de orientación maoísta surgida en Córdoba y Urabá. En 1991 la mayor parte de sus integrantes dejó las armas y formó el movimiento Esperanza, Paz y Libertad; una disidencia siguió en armas en el Catatumbo."},
+{n:"«Cien años de soledad»",c:"Memoria y arte",y:1967,f:"1967",l:"Aracataca, Magdalena",t:"Gabriel García Márquez, nacido en Aracataca, recreó la masacre de las bananeras en Macondo: un tren cargado de muertos y un pueblo que niega lo ocurrido. La novela convirtió en memoria colectiva un hecho que se quería olvidar."},
+{n:"El M-19 roba la espada de Bolívar",c:"Actor armado",y:1974,f:"17 de enero de 1974",l:"Bogotá",t:"El Movimiento 19 de Abril se dio a conocer llevándose la espada de Bolívar de su quinta en Bogotá. Su nombre aludía a las elecciones del 19 de abril de 1970, que consideró fraudulentas."},
+{n:"La toma del Palacio de Justicia",c:"Hecho",y:1985,f:"6 y 7 de noviembre de 1985",l:"Bogotá",t:"Un comando del M-19 se tomó el Palacio de Justicia y la retoma del Ejército duró 28 horas. Murieron cerca de un centenar de personas, entre ellas once magistrados de la Corte Suprema, y varias personas salieron con vida y luego desaparecieron."},
+{n:"El Paro del Nororiente",c:"Resistencia",y:1987,f:"1987",l:"Tibú, Catatumbo",t:"Miles de campesinos del Catatumbo y del nororiente marcharon para exigir al Estado vías, servicios y garantías para la vida. Fue una de las grandes protestas sociales de la región; muchos de sus líderes fueron perseguidos después."},
+{n:"La masacre de Segovia",c:"Hecho",y:1988,f:"11 de noviembre de 1988",l:"Segovia, Antioquia",t:"Un grupo paramilitar asesinó a 43 personas en el casco urbano de Segovia, donde la Unión Patriótica había ganado las elecciones locales. La justicia condenó años después a un excongresista como responsable."},
+{n:"La paz con el M-19",c:"Paz y justicia",y:1990,f:"9 de marzo de 1990",l:"Santo Domingo, Cauca",t:"El M-19 entregó sus armas y se convirtió en partido político. Semanas después su líder y candidato presidencial, Carlos Pizarro, fue asesinado en pleno vuelo; aun así, el movimiento siguió en la vida legal."},
+{n:"La Constitución de 1991",c:"Paz y justicia",y:1991,f:"4 de julio de 1991",l:"Bogotá",t:"Una Asamblea Constituyente con excombatientes, indígenas y otras voces antes excluidas definió a Colombia como Estado social de derecho, pluriétnico y multicultural, y creó la acción de tutela para defender los derechos fundamentales."},
+{n:"La escuela de Alto Bonito",c:"Hecho",y:1992,f:"1992",l:"Dabeiba, Antioquia",t:"Catorce militares murieron en una emboscada de las FARC frente a una escuela rural. El fotógrafo Jesús Abad Colorado vio en el tablero la última lección: la historia de Caín y Abel, un hermano que mata a otro hermano."},
+{n:"La masacre de La Chinita",c:"Hecho",y:1994,f:"23 de enero de 1994",l:"Apartadó, Antioquia",t:"Las FARC asesinaron a 35 personas durante una fiesta en un barrio de Apartadó; muchas estaban ligadas a Esperanza, Paz y Libertad, el movimiento de los exguerrilleros del EPL. Años después, las FARC pidieron perdón públicamente."},
+{n:"La masacre de Mondoñedo",c:"Hecho",y:1996,f:"7 de septiembre de 1996",l:"Mosquera, Cundinamarca",t:"Miembros de la DIJIN de la Policía secuestraron, torturaron y asesinaron a seis personas a las que acusaban de pertenecer a una red urbana de las FARC. La justicia condenó a los policías responsables."},
+{n:"La Comunidad de Paz de San José de Apartadó",c:"Resistencia",y:1997,f:"23 de marzo de 1997",l:"San José de Apartadó, Antioquia",t:"Campesinos de Urabá se declararon neutrales ante todos los grupos armados: no portan armas ni colaboran con ningún bando. Pese a los asesinatos y amenazas que han sufrido, la comunidad sigue en pie."},
+{n:"Las Autodefensas Unidas de Colombia",c:"Actor armado",y:1997,f:"Abril de 1997",l:"Urabá, Antioquia",t:"Varios grupos paramilitares regionales se unieron bajo el mando de los hermanos Castaño. Con apoyo de sectores políticos, económicos y de la fuerza pública, se extendieron por gran parte del país."},
+{n:"La masacre de Mapiripán",c:"Hecho",y:1997,f:"15 al 20 de julio de 1997",l:"Mapiripán, Meta",t:"Paramilitares llegados en avión desde Urabá ocuparon el pueblo durante cinco días. La Corte Interamericana condenó al Estado en 2005 por la colaboración y la omisión de sus agentes; la cifra de víctimas aún se discute."},
+{n:"La tragedia de Machuca",c:"Hecho",y:1998,f:"18 de octubre de 1998",l:"Machuca, Segovia, Antioquia",t:"El ELN dinamitó un oleoducto; el petróleo derramado se incendió y el fuego alcanzó las casas del caserío. Murieron 84 personas, muchas de ellas niños y niñas."},
+{n:"La zona de distensión del Caguán",c:"Paz y justicia",y:1998,f:"1998–2002",l:"San Vicente del Caguán, Caquetá",t:"El gobierno de Andrés Pastrana despejó 42.000 km² para negociar con las FARC. Tras más de tres años sin acuerdos y con la guerra en aumento, el proceso se rompió en 2002."},
+{n:"Las Madres de La Candelaria",c:"Resistencia",y:1999,f:"1999",l:"Medellín, Antioquia",t:"Madres y familiares de personas desaparecidas se reúnen cada miércoles en el atrio de la iglesia de La Candelaria, en Medellín, con las fotos de sus seres queridos. Su lema es encontrarlos y que la desaparición forzada no se repita."},
+{n:"El asesinato de Jaime Garzón",c:"Resistencia",y:1999,f:"13 de agosto de 1999",l:"Bogotá",t:"Humorista y periodista que, con personajes como Heriberto de la Calle, se reía del poder y ayudaba a liberar secuestrados. Fue asesinado en Bogotá; la justicia estableció la participación de paramilitares y de agentes del Estado."},
+{n:"La masacre de La Gabarra",c:"Hecho",y:1999,f:"21 de agosto de 1999",l:"La Gabarra, Tibú",t:"Con la llegada del Bloque Catatumbo de las AUC, unas 35 personas fueron asesinadas en una sola noche en este corregimiento. Fue el comienzo de lo que la gente del Catatumbo llama la «arremetida paramilitar»."},
+{n:"La masacre de El Salado",c:"Hecho",y:2000,f:"16 al 21 de febrero de 2000",l:"El Salado, El Carmen de Bolívar",t:"Unos 450 paramilitares asesinaron a 60 personas y obligaron a desplazarse a todo el pueblo. El informe del Centro de Memoria lleva el título que dieron sus habitantes: «Esa guerra no era nuestra»."},
+{n:"Operación Berlín",c:"Hecho",y:2000,f:"Noviembre de 2000",l:"Suratá, Santander",t:"El Ejército enfrentó una columna de las FARC en la que marchaban unos 150 menores de edad reclutados. Decenas de niños y niñas murieron o fueron capturados: un símbolo del reclutamiento forzado."},
+{n:"La masacre de Nueva Venecia",c:"Hecho",y:2000,f:"22 de noviembre de 2000",l:"Nueva Venecia, Ciénaga Grande",t:"Unos 60 paramilitares llegaron en lanchas a este pueblo palafítico de pescadores en la Ciénaga Grande de Santa Marta. Asesinaron al menos a 39 personas; muchas familias se fueron y luego algunas regresaron."},
+{n:"Los hornos de Juan Frío",c:"Hecho",y:2001,f:"2001",l:"Villa del Rosario, Norte de Santander",t:"Paramilitares construyeron hornos junto a un trapiche abandonado para desaparecer los cuerpos de sus víctimas. Se conocieron por las confesiones de excombatientes ante la justicia; hoy la comunidad trabaja contra la estigmatización."},
+{n:"El Pacto de Ralito",c:"Hecho",y:2001,f:"23 de julio de 2001",l:"Santa Fe de Ralito, Córdoba",t:"Jefes paramilitares y políticos firmaron en secreto un documento para «refundar la patria». Cuando se conoció, en 2006, abrió los procesos de la parapolítica contra decenas de congresistas."},
+{n:"La masacre de Bojayá",c:"Hecho",y:2002,f:"2 de mayo de 2002",l:"Bellavista, Bojayá, Chocó",t:"En medio de un combate entre las FARC y paramilitares, un cilindro bomba lanzado por las FARC cayó en la iglesia donde se refugiaba la población. Murieron 79 personas, muchas de ellas niños."},
+{n:"La masacre de Bahía Portete",c:"Hecho",y:2004,f:"18 de abril de 2004",l:"Bahía Portete, La Guajira",t:"Unos 40 paramilitares asesinaron al menos a seis personas, cuatro de ellas mujeres wayuu, y más de 600 indígenas tuvieron que huir, muchos a Venezuela. Muestra cómo se atacó a las mujeres para doblegar a un pueblo entero."},
+{n:"La Ley de Justicia y Paz",c:"Paz y justicia",y:2005,f:"2005",l:"Bogotá",t:"Ley que dio penas reducidas a los paramilitares desmovilizados a cambio de verdad y reparación. Sus confesiones revelaron miles de crímenes y fosas, pero muchas víctimas sintieron que la verdad quedó incompleta."},
+{n:"«El David», de Miguel Ángel Rojas",c:"Memoria y arte",y:2005,f:"2005",l:"Bogotá",t:"Serie de fotografías de un joven campesino que perdió una pierna por una mina, en la pose del David de Miguel Ángel. Colombia es uno de los países con más víctimas de minas antipersonal en el mundo."},
+{n:"Los mal llamados «falsos positivos»",c:"Hecho",y:2008,f:"2008",l:"Soacha, Cundinamarca",t:"Jóvenes de Soacha engañados con ofertas de trabajo aparecieron muertos en Ocaña, presentados por militares como guerrilleros caídos en combate. Sus madres lo denunciaron; la JEP estableció al menos 6.402 víctimas entre 2002 y 2008."},
+{n:"La Ley de Víctimas",c:"Paz y justicia",y:2011,f:"10 de junio de 2011",l:"Bogotá",t:"La Ley 1448 reconoció por primera vez a las víctimas del conflicto armado y su derecho a la verdad, la justicia, la reparación y la restitución de tierras."},
+{n:"«¡Basta ya!»",c:"Memoria y arte",y:2013,f:"2013",l:"Bogotá",t:"Informe del Centro Nacional de Memoria Histórica: entre 1958 y 2012 el conflicto causó al menos 220.000 muertes, y cerca de ocho de cada diez víctimas eran civiles."},
+{n:"La Cátedra de la Paz",c:"Paz y justicia",y:2014,f:"2014",l:"Bogotá",t:"La Ley 1732 hizo obligatoria en todos los colegios del país una cátedra sobre memoria, convivencia y resolución pacífica de conflictos. La escuela pasó a ser un lugar para construir paz."},
+{n:"«Aniquilar la diferencia»",c:"Memoria y arte",y:2015,f:"2015",l:"Bogotá",t:"Informe del Centro Nacional de Memoria Histórica sobre la violencia contra personas lesbianas, gais, bisexuales y trans en el conflicto. Muestra que los grupos armados las persiguieron por ser quienes eran."},
+{n:"El Acuerdo de Paz con las FARC",c:"Paz y justicia",y:2016,f:"24 de noviembre de 2016",l:"Bogotá",t:"Tras cuatro años de diálogos en La Habana y el triunfo del «No» en el plebiscito, el acuerdo se ajustó y se firmó en el Teatro Colón. En 2017 las FARC entregaron sus armas y se convirtieron en partido político."},
+{n:"Las alabaoras de Bojayá",c:"Memoria y arte",y:2016,f:"2016",l:"Bojayá, Chocó",t:"Mujeres de Pogue transformaron los alabaos, cantos fúnebres afro del Pacífico, en canciones de memoria sobre la masacre de 2002. En 2016 cantaron en la ceremonia de la firma de la paz en Cartagena."},
+{n:"El asesinato de líderes sociales",c:"Hecho",y:2016,f:"2016 en adelante",l:"Catatumbo, Norte de Santander",t:"Después del acuerdo de paz continuaron los asesinatos de líderes comunitarios, campesinos, indígenas y defensores de derechos humanos. Según Indepaz, fueron más de mil hasta 2021; el Catatumbo es una de las regiones más afectadas."},
+{n:"La Jurisdicción Especial para la Paz",c:"Paz y justicia",y:2018,f:"Enero de 2018",l:"Bogotá",t:"Tribunal creado por el acuerdo de paz para juzgar los crímenes más graves del conflicto, cometidos por exguerrilleros y miembros de la fuerza pública. Pone en el centro a las víctimas y da penas menores a quien diga toda la verdad."},
+{n:"«Fragmentos», de Doris Salcedo",c:"Memoria y arte",y:2018,f:"2018",l:"Bogotá",t:"Contramonumento hecho con 37 toneladas de armas entregadas por las FARC, fundidas en placas que martillaron mujeres víctimas de violencia sexual. Sobre las armas de la guerra hoy se camina."},
+{n:"«El testigo», de Jesús Abad Colorado",c:"Memoria y arte",y:2018,f:"2018",l:"Bogotá",t:"Exposición con más de 500 fotografías tomadas durante 25 años de conflicto. Abad Colorado retrata a las víctimas con respeto: muestra el dolor, pero también la dignidad y la resistencia."},
+{n:"El desplazamiento de Banco de Arena",c:"Hecho",y:2021,f:"8 de septiembre de 2021",l:"Banco de Arena, Cúcuta",t:"Hombres armados obligaron a las familias de este corregimiento rural a dejar sus casas en 20 minutos. Muestra que, después del acuerdo, la disputa por la frontera con Venezuela sigue desplazando gente."},
+{n:"El informe final de la Comisión de la Verdad",c:"Paz y justicia",y:2022,f:"28 de junio de 2022",l:"Bogotá",t:"Tras escuchar a más de 30.000 personas, la Comisión presentó «Hay futuro si hay verdad», un informe para entender las causas del conflicto y evitar que se repita. Recomienda llevar sus hallazgos a la escuela."},
+{n:"El Consejo Regional Indígena del Cauca",c:"Resistencia",y:1971,f:"24 de febrero de 1971",l:"Toribío, Cauca",t:"Los pueblos indígenas del Cauca se organizaron para recuperar sus tierras y defender su cultura. Su guardia indígena, armada solo con bastones de mando, protege los territorios sin usar armas."},
+{n:"Fundación de Santafé de Bogotá",c:"Hecho",y:1538,f:"6 de agosto de 1538",l:"Sabana de Bogotá",t:"Gonzalo Jiménez de Quesada funda la ciudad en territorio muisca, cerca de Bacatá. Será la capital del Nuevo Reino de Granada."},
+{n:"Revolución de los Comuneros",c:"Resistencia",y:1781,f:"1781",l:"El Socorro, Santander",t:"Campesinos y artesanos se levantan contra nuevos impuestos. Las autoridades firmaron unas capitulaciones que luego desconocieron, y José Antonio Galán fue ejecutado en 1782."},
+{n:"Expedición Botánica",c:"Memoria y arte",y:1783,f:"1783–1816",l:"Mariquita, Tolima",t:"Dirigida por José Celestino Mutis, estudia la flora neogranadina. Sus pintores hicieron miles de láminas de plantas de gran precisión."},
+{n:"Nariño traduce los Derechos del Hombre",c:"Paz y justicia",y:1793,f:"1793",l:"Bogotá",t:"Antonio Nariño traduce la declaración francesa y la imprime en secreto en su imprenta. Fue condenado y pasó años en prisión."},
+{n:"Grito de Independencia",c:"Hecho",y:1810,f:"20 de julio de 1810",l:"Bogotá",t:"Una disputa por un florero sirve de excusa para un cabildo abierto que crea una Junta de Gobierno. Es el inicio del proceso de independencia de la Nueva Granada."},
+{n:"Policarpa Salavarrieta",c:"Resistencia",y:1817,f:"Fusilada el 14 de noviembre de 1817",l:"Bogotá",t:"Costurera y espía de los patriotas, fue capturada y fusilada en Santafé. Es símbolo de la participación de las mujeres en la independencia."},
+{n:"Batalla de Boyacá",c:"Hecho",y:1819,f:"7 de agosto de 1819",l:"Puente de Boyacá",t:"El ejército de Bolívar y Santander derrota a las tropas realistas y abre el camino a Santafé. Sella la independencia de la actual Colombia."},
+{n:"Abolición de la esclavitud en Colombia",c:"Paz y justicia",y:1851,f:"21 de mayo de 1851",l:"Bogotá",t:"Una ley declara libres a todas las personas esclavizadas desde el 1 de enero de 1852. Los antiguos dueños recibieron indemnización; los liberados, no."},
+{n:"María (Jorge Isaacs)",c:"Memoria y arte",y:1867,f:"1867",l:"Bogotá",t:"Novela romántica sobre el amor de Efraín y María en una hacienda del Valle del Cauca. Es una de las obras más leídas de la literatura latinoamericana del siglo XIX."}
+];
+CARDS_COL.forEach(c=>{c.tema="Colombia";CARDS.push(c)});
+const MAZOS={Colombia:"Colombia"};
+const INI=n=>n.replace(/^[«¡\s]+/,"").replace(/^(La |El |Las |Los |De )/,"").charAt(0).toUpperCase();
+const Y=y=>y<0?`${-y} a. C.`:String(y);
+const KEY="conexiones-colombia-v1";
+const IMG=/*IMG*/{"La Guerra de los Mil Días": {"img": "img/co00_l.jpg", "ar": 2.751, "artist": "Autor desconocido", "license": "Public domain", "date": "1900", "page": "https://commons.wikimedia.org/wiki/File:1000tropas.jpg"}, "La masacre de las bananeras": {"img": "img/co01_l.jpg", "ar": 1.211, "artist": "Autor desconocido", "license": "Public domain", "date": "1928", "page": "https://commons.wikimedia.org/wiki/File:Huelguistas_de_las_Bananeras.jpg"}, "El Bogotazo": {"img": "img/co02_l.jpg", "ar": 1.603, "artist": "Daniel Pradilla Holguin", "license": "CC BY-SA 3.0", "date": "1948", "page": "https://commons.wikimedia.org/wiki/File:Bogotazo.jpg"}, "«Cien años de soledad»": {"img": "img/co03_l.jpg", "ar": 1.5, "artist": "Tecsie", "license": "CC BY-SA 3.0", "date": "2013-12-21", "page": "https://commons.wikimedia.org/wiki/File:Casa_natal_del_escritor_Gabriel_Garc%C3%ADa_M%C3%A1rquez.JPG"}, "El M-19 roba la espada de Bolívar": {"img": "img/co04_l.jpg", "ar": 1.333, "artist": "Kamilokardona", "license": "CC BY-SA 3.0", "date": "2008-02-29", "page": "https://commons.wikimedia.org/wiki/File:Espada_y_ba%C3%BAl_de_Sim%C3%B3n_Bol%C3%ADvar_en_la_Quinta_de_Bol%C3%ADvar._Bogot%C3%A1._Colombia.jpg"}, "La toma del Palacio de Justicia": {"img": "img/co05_l.jpg", "ar": 1.333, "artist": "PedroDiazS", "license": "CC BY-SA 3.0", "date": "2012-07-04", "page": "https://commons.wikimedia.org/wiki/File:Victimas_de_la_toma_al_Palacio_de_Justicia.JPG"}, "El Paro del Nororiente": {"img": "img/co06_l.jpg", "ar": 1.333, "artist": "Gerardo Parra Ocando", "license": "CC BY-SA 4.0", "date": "2014-01-31", "page": "https://commons.wikimedia.org/wiki/File:Rio_Catatumbo.jpg"}, "La masacre de La Gabarra": {"img": "img/co07_l.jpg", "ar": 1.093, "artist": "Rafael ayala castillo", "license": "CC BY-SA 4.0", "date": "2019-05-02", "page": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_catatumbo.jpg"}, "La paz con el M-19": {"img": "img/co08_l.jpg", "ar": 0.56, "artist": "Co.pinterest.com", "license": "CC BY-SA 4.0", "date": "2020-11-03", "page": "https://commons.wikimedia.org/wiki/File:Carlos_Pizarro_Le%C3%B3ngom%C3%A9z.jpg"}, "La Constitución de 1991": {"img": "img/co09_l.jpg", "ar": 0.75, "artist": "MariaU3", "license": "CC BY-SA 3.0", "date": "2019-01-27", "page": "https://commons.wikimedia.org/wiki/File:Constituc%C3%B3n_Pol%C3%ADtica_de_Colombia_1991.jpg"}, "Las Madres de La Candelaria": {"img": "img/co10_l.jpg", "ar": 1.324, "artist": "Melitón Rodriguez", "license": "Public domain", "date": "1895", "page": "https://commons.wikimedia.org/wiki/File:Iglesia_de_la_Candelaria_-Parque_de_Berr%C3%ADo.jpg"}, "El asesinato de Jaime Garzón": {"img": "img/co11_l.jpg", "ar": 0.802, "artist": "Jupa.11", "license": "CC BY-SA 4.0", "date": "2023-03-24", "page": "https://commons.wikimedia.org/wiki/File:Monumento_a_Jaime_Garz%C3%B3n.jpg"}, "La masacre de El Salado": {"img": "img/co12_l.jpg", "ar": 0.667, "artist": "Henblo", "license": "CC BY-SA 4.0", "date": "2015-07-16", "page": "https://commons.wikimedia.org/wiki/File:Santuario_Arquidioceano_Nuestra_Se%C3%B1ora_del_Carmen%2C_El_Carmen_de_Bol%C3%ADvar.jpg"}, "La masacre de Nueva Venecia": {"img": "img/co13_l.jpg", "ar": 1.333, "artist": "Augusto Sisa (Tecsie)", "license": "CC BY-SA 3.0", "date": "2006", "page": "https://commons.wikimedia.org/wiki/File:Puente_en_zona_de_palafitos_en_Nueva_Venecia-Sitionuevo-Magdalena-Colombia.jpg"}, "La masacre de Bahía Portete": {"img": "img/co15_l.jpg", "ar": 1.5, "artist": "Macuiratours", "license": "CC BY-SA 4.0", "date": "2015-04-03", "page": "https://commons.wikimedia.org/wiki/File:La_Mujer_Wayuu%2C_La_Guajira_Colombiana.jpg"}, "La Ley de Justicia y Paz": {"img": "img/co16_l.jpg", "ar": 1.779, "artist": "Rikimedia", "license": "CC BY-SA 3.0", "date": "2008-10-12", "page": "https://commons.wikimedia.org/wiki/File:El_Capitolio_Nacional_%28Bogot%C3%A1%2C_Colombia%29_1.jpg"}, "Los mal llamados «falsos positivos»": {"img": "img/co18_l.jpg", "ar": 1.947, "artist": "contrastperiodistes", "license": "CC BY 3.0", "date": "2013-08-28", "page": "https://commons.wikimedia.org/wiki/File:Madres_de_Soacha.jpg"}, "«¡Basta ya!»": {"img": "img/co19_l.jpg", "ar": 1.35, "artist": "Felipe Restrepo Acosta", "license": "CC BY-SA 3.0", "date": "2013-01-08", "page": "https://commons.wikimedia.org/wiki/File:Centro_de_Memoria_Hist%C3%B3rica_-_Bogot%C3%A1.jpg"}, "«Aniquilar la diferencia»": {"img": "img/co20_l.jpg", "ar": 1.5, "artist": "Diego Cambiaso from Bogotá, Colombia", "license": "CC BY-SA 2.0", "date": "2013-06-30", "page": "https://commons.wikimedia.org/wiki/File:Marcha_LGBT_2013_Bogot%C3%A1_%289191775315%29.jpg"}, "El Acuerdo de Paz con las FARC": {"img": "img/co21_l.jpg", "ar": 1.5, "artist": "U.S. Department of State from United States", "license": "Public domain", "date": "2016-09-26", "page": "https://commons.wikimedia.org/wiki/File:Colombia_President_Santos_Pins_a_Peace_Dove_on_FARC_Leader_Jim%C3%A9nez_%2829330649593%29.jpg"}, "El informe final de la Comisión de la Verdad": {"img": "img/co22_l.jpg", "ar": 0.773, "artist": "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición", "license": "CC BY-SA 4.0", "date": "2022-06-28", "page": "https://commons.wikimedia.org/wiki/File:Informe_Final_Comisi%C3%B3n_de_la_Verdad_-_Cap%C3%ADtulo_Hallazgos_y_recomendaciones.pdf"}, "El Consejo Regional Indígena del Cauca": {"img": "img/co23_l.jpg", "ar": 1.5, "artist": "geya garcia", "license": "CC BY 2.0", "date": "2014-05-10", "page": "https://commons.wikimedia.org/wiki/File:Kiwe_Thegnas_-_Casa_de_la_guardia-_%2815237845676%29.jpg"}, "Fundación de Santafé de Bogotá": {"img": "img/hc00_l.jpg", "ar": 0.73, "artist": "Ricardo Gómez Campuzano", "license": "CC BY-SA 3.0", "date": "2021", "page": "https://commons.wikimedia.org/wiki/File:El_Licenciado_Gonzalo_Jim%C3%A9nez_de_Quesada.png"}, "Revolución de los Comuneros": {"img": "img/hc01_l.jpg", "ar": 1.0, "artist": "Domingo Moreno Otero", "license": "Public domain", "date": "2018", "page": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Antonio_Gal%C3%A1n_by_Domingo_Moreno_Otero.jpg"}, "Expedición Botánica": {"img": "img/hc02_l.jpg", "ar": 0.755, "artist": "Oil painting by R. Cristobal, canvas 122 x 92.6 cm", "license": "CC BY 4.0", "date": "1930", "page": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Celestino_Mutis.jpg"}, "Nariño traduce los Derechos del Hombre": {"img": "img/hc03_l.jpg", "ar": 0.667, "artist": "Bernard Gagnon", "license": "CC BY-SA 4.0", "date": "2020", "page": "https://commons.wikimedia.org/wiki/File:Statue_of_Antonio_Nari%C3%B1o,_Villa_de_Leyva.jpg"}, "Grito de Independencia": {"img": "img/hc04_l.jpg", "ar": 0.75, "artist": "NicolásF2. Obras de Generoso Jaspe, Ricardo Acevedo Bernal, Martín Tovar y José ", "license": "CC BY-SA 4.0", "date": "2023", "page": "https://commons.wikimedia.org/wiki/File:Collage_Guerra_de_Independencia_de_Colombia.jpg"}, "Policarpa Salavarrieta": {"img": "img/hc05_l.jpg", "ar": 0.787, "artist": "José María Espinosa Prieto", "license": "Public domain", "date": "1855", "page": "https://commons.wikimedia.org/wiki/File:Policarpa_Salabarrieta.jpg"}, "Batalla de Boyacá": {"img": "img/hc06_l.jpg", "ar": 1.475, "artist": "Martin Tovar y Tovar", "license": "Public domain", "date": "1890", "page": "https://commons.wikimedia.org/wiki/File:Batalla_de_Boyaca_de_Martin_Tovar_y_Tovar.jpg"}, "Abolición de la esclavitud en Colombia": {"img": "img/hc07_l.jpg", "ar": 0.709, "artist": "Nadar", "license": "Public domain", "date": "2011", "page": "https://commons.wikimedia.org/wiki/File:General_Jos%C3%A9_Hilario_L%C3%B3pez.jpg"}, "María (Jorge Isaacs)": {"img": "img/hc08_l.jpg", "ar": 0.695, "artist": "Cultura Banco de la República", "license": "Public domain", "date": "before 1895", "page": "https://commons.wikimedia.org/wiki/File:Fi_322_Isaacs,_Jorge.jpg"}, "El Frente Nacional": {"img": "img/co24_l.jpg", "ar": 0.746, "artist": "", "license": "", "date": "", "page": "https://commons.wikimedia.org/wiki/File:Alberto_Lleras_Camargo.jpg"}, "«Violencia», de Alejandro Obregón": {"img": "img/sy00.svg", "ar": 1.333, "src": "sym"}, "Marquetalia y el origen de las FARC": {"img": "img/sy01.svg", "ar": 1.333, "src": "sym"}, "El nacimiento del ELN": {"img": "img/sy02.svg", "ar": 1.333, "src": "sym"}, "El Ejército Popular de Liberación (EPL)": {"img": "img/sy03.svg", "ar": 1.333, "src": "sym"}, "Las Autodefensas Unidas de Colombia": {"img": "img/sy04.svg", "ar": 1.333, "src": "sym"}, "La masacre de Segovia": {"img": "img/sy05.svg", "ar": 1.333, "src": "sym"}, "La escuela de Alto Bonito": {"img": "img/sy06.svg", "ar": 1.333, "src": "sym"}, "La masacre de La Chinita": {"img": "img/sy07.svg", "ar": 1.333, "src": "sym"}, "La masacre de Mondoñedo": {"img": "img/sy08.svg", "ar": 1.333, "src": "sym"}, "La Comunidad de Paz de San José de Apartadó": {"img": "img/sy09.svg", "ar": 1.333, "src": "sym"}, "La masacre de Mapiripán": {"img": "img/sy10.svg", "ar": 1.333, "src": "sym"}, "La tragedia de Machuca": {"img": "img/sy11.svg", "ar": 1.333, "src": "sym"}, "La zona de distensión del Caguán": {"img": "img/sy12.svg", "ar": 1.333, "src": "sym"}, "Operación Berlín": {"img": "img/sy13.svg", "ar": 1.333, "src": "sym"}, "Los hornos de Juan Frío": {"img": "img/sy14.svg", "ar": 1.333, "src": "sym"}, "El Pacto de Ralito": {"img": "img/sy15.svg", "ar": 1.333, "src": "sym"}, "La masacre de Bojayá": {"img": "img/sy16.svg", "ar": 1.333, "src": "sym"}, "«El David», de Miguel Ángel Rojas": {"img": "img/sy17.svg", "ar": 1.333, "src": "sym"}, "La Ley de Víctimas": {"img": "img/sy18.svg", "ar": 1.333, "src": "sym"}, "La Cátedra de la Paz": {"img": "img/sy19.svg", "ar": 1.333, "src": "sym"}, "Las alabaoras de Bojayá": {"img": "img/sy20.svg", "ar": 1.333, "src": "sym"}, "El asesinato de líderes sociales": {"img": "img/sy21.svg", "ar": 1.333, "src": "sym"}, "La Jurisdicción Especial para la Paz": {"img": "img/sy22.svg", "ar": 1.333, "src": "sym"}, "«Fragmentos», de Doris Salcedo": {"img": "img/sy23.svg", "ar": 1.333, "src": "sym"}, "«El testigo», de Jesús Abad Colorado": {"img": "img/sy24.svg", "ar": 1.333, "src": "sym"}, "El desplazamiento de Banco de Arena": {"img": "img/sy25.svg", "ar": 1.333, "src": "sym"}};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const C=id=>CARDS[id];
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+let S;
+function fresh(keepName,mazo){
+  mazo="Colombia";
+  const deck=shuffle(CARDS.map((_,i)=>i).filter(i=>mazo==="Todas"||CARDS[i].tema===mazo));
+  const line=[deck.pop()];
+  const hand=[deck.pop(),deck.pop(),deck.pop(),deck.pop()];
+  return {v3:true,mazo,nombre:keepName||"",deck,discard:[],line,hand,ok:0,bad:0,sel:null,result:null,log:[],flipped:{},last:null,startedAt:new Date().toISOString()};
+}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function load(){try{const r=localStorage.getItem(KEY);if(r){const o=JSON.parse(r);if(o&&o.v3&&Array.isArray(o.line))return o}}catch(e){}return null}
+function draw(){if(!S.deck.length){if(!S.discard.length)return;S.deck=shuffle(S.discard);S.discard=[]}S.hand.push(S.deck.pop())}
+const done=()=>!S.hand.length;
+function credit(d){const im=IMG[d.n];if(!im)return"";if(im.src==="book")return `<p class="credit">Imagen${im.artist?": "+esc(im.artist):""} · tomada de C. A. Pickover, <i>Artificial Intelligence: An Illustrated History</i> (Sterling, 2019)</p>`;if(im.src==="sym")return `<p class="credit">Símbolo dibujado para el juego: no es una imagen del hecho.</p>`;if(!im.artist)return `<p class="credit">Imagen: <a href="${esc(im.page)}" target="_blank" rel="noopener">Wikimedia Commons</a> (ver autor y licencia)</p>`;return `<p class="credit">Imagen: ${esc(im.artist||"autor desconocido")}${im.date?", "+esc(im.date):""} · ${esc(im.license||"")} · <a href="${esc(im.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></p>`}
+function picBlock(d){const im=IMG[d.n];if(!im)return"";return `<figure class="rpic"><img src="${im.big||im.img}" alt="${esc(d.n)}">${credit(d)}</figure>`}
 
-	</body>
-</html>
+function cardHTML(id,{cls="",flipped=false,attrs="",big=false}={}){
+  const d=C(id),im=IMG[d.n],src=im?(big?(im.big||im.img):im.img):"";
+  return `<button class="card ${big?"big":""} ${cls} ${flipped?"flipped":""}" data-cat="${esc(d.c)}" style="--ar:${im&&im.ar?im.ar:0.7}" data-id="${id}" ${attrs} aria-label="${esc(d.n)}${flipped?", "+d.y:""}">
+    <span class="in">
+      <span class="face a">${im?`<img class="pic" src="${src}" alt="" loading="lazy">`:""}<span class="cat">${""}${esc(d.c)}</span>${im?"":`<span class="ini">${esc(d.n.replace(/^[«¡\s]+/,"").replace(/^(La |El |Las |Los |De )/,"").charAt(0).toUpperCase())}</span>`}<span class="nm">${esc(d.n)}</span></span>
+      <span class="face b">${im?`<img class="pic sm" src="${src}" alt="" loading="lazy">`:""}<span class="yr">${Y(d.y)}</span><span class="fd">${esc(d.f)}<br>${esc(d.l)}</span><span class="nm">${esc(d.n)}</span></span>
+    </span></button>`;
+}
+function featHTML(id,ok){const d=C(id),im=IMG[d.n];
+  return `<div class="feat ${ok?"ok":"bad"}" style="--ar:${im&&im.ar?im.ar:0.8}" data-id="${id}">${im?`<img class="fpic" src="${im.big||im.img}" alt="${esc(d.n)}">`:""}<div class="ftx"><span class="eyebrow">${ok?"✓ Acierto":"✗ Iba aquí"} · ${""}${esc(d.c)}</span><span class="fyr">${Y(d.y)}</span><span class="fnm">${esc(d.n)}</span><span class="ffd">${esc(d.f)} · ${esc(d.l)}</span><p>${esc(d.t)}</p>${credit(d)}</div></div>`}
+function render(){
+  $("meta").innerHTML=`<span>Turno <b>${S.log.length+(done()?0:1)}</b></span><span>Mazo <b>${S.deck.length}</b></span><span>Aciertos <b>${S.ok}</b></span><span>Fallos <b>${S.bad}</b></span>`;
+  $("nombre").value=S.nombre||"";$("mazo").value="Colombia";{const n=CARDS.filter(c=>("Colombia")==="Todas"||c.tema===("Colombia")).length;$("sub-mazo").textContent=`${n} fichas`}
+  // línea
+  const placing=S.sel!==null;const R=S.result;
+  const slot=k=>placing?`<button class="slot on" data-slot="${k}" aria-label="Ubicar aquí">+</button>`:`<span class="slot" aria-hidden="true"></span>`;
+  let h="";S.line.forEach((id,i)=>{h+=slot(i)+((R&&R.id===id&&!placing)?featHTML(id,R.ok):cardHTML(id,{big:true,flipped:!!S.flipped[id],attrs:`data-line="${i}"`}))});h+=slot(S.line.length);
+  $("rail-inner").innerHTML=h;
+  $("rail-hint").textContent=placing?"Toque un hueco (+). Izquierda es antes; derecha es después.":done()?"Toque cualquier ficha para voltearla y repasar.":"Toque una ficha de la línea para ver su fecha.";
+  const det=$("detail");
+  det.hidden=true;
+  // panel de jugada
+  let t="";
+  if(R){const d=C(R.id);
+    t=`<div class="verdict ${R.ok?"good":"bad"}"><span class="mk">${R.ok?"✓":"✗"}</span><span>${R.ok?"Acierto: se queda en la línea. Lea en voz alta la ficha ampliada.":`Fallo: no va ${esc(R.where)}.<span class="right">Va: ${esc(R.right||"en otro lugar")}.</span><span class="note">La ficha quedó en su lugar correcto, ampliada en la línea: léala en voz alta. Usted toma dos fichas.</span>`}</span></div>`;
+  }
+  if(done()){
+    t+=`<div class="verdict good"><span class="mk">★</span>Ubicó todas sus fichas en ${S.log.length} turnos (${S.ok} aciertos, ${S.bad} fallos).</div>
+      <label class="eyebrow" for="t-rec">Registro de la partida</label><textarea class="record" id="t-rec" readonly>${esc(record())}</textarea>
+      <div class="row"><button class="btn" id="b-copiar">Copiar registro</button><button class="btn" id="b-big2">Ver la línea en pantalla grande</button><button class="btn ghost" id="b-otra">Jugar otra partida</button><span class="hint" id="copiado"></span></div>`;
+  }else if(!R)t=`<p class="q">Toque una ficha de su mano y luego un hueco (+) de la línea.</p>`;
+  $("turn").innerHTML=t;$("turn").hidden=!t;
+  // mano
+  $("hand").innerHTML=S.hand.length?S.hand.map(id=>cardHTML(id,{cls:id===S.sel?"sel":"",attrs:`data-hand="${id}"`})).join(""):`<p class="hint">Su mano está vacía.</p>`;
+  $("hand-hint").textContent=done()?"":S.sel===null?(R?"Elija su siguiente ficha.":"Elija una ficha."):"Ahora toque un hueco (+) en la línea.";
+  save();
+}
+function place(pos){
+  const id=S.sel,y=C(id).y,prev=S.line[pos-1],next=S.line[pos];
+  const ok=(prev===undefined||C(prev).y<=y)&&(next===undefined||y<=C(next).y);
+  const where=[prev!==undefined?`después de ${C(prev).n} (${Y(C(prev).y)})`:"",next!==undefined?`antes de ${C(next).n} (${Y(C(next).y)})`:""].filter(Boolean).join(" y ")||"ahí";
+  S.log.push({card:C(id).n,year:y,ok,where});
+  S.hand=S.hand.filter(x=>x!==id);
+  let right="";
+  if(ok){S.line.splice(pos,0,id);S.ok++}else{let k=S.line.findIndex(x=>C(x).y>y);if(k<0)k=S.line.length;
+    const a=S.line[k-1],b=S.line[k];const fa=a!==undefined?`${C(a).n} (${Y(C(a).y)})`:"",fb=b!==undefined?`${C(b).n} (${Y(C(b).y)})`:"";
+    right=a!==undefined&&b!==undefined?`entre ${fa} y ${fb}`:a===undefined?`al comienzo de la línea, antes de ${fb}`:`al final de la línea, después de ${fa}`;
+    S.line.splice(k,0,id);S.bad++;draw();draw()}
+  S.flipped[id]=true;
+  S.result={id,ok,where,right};if(!ok)S.log[S.log.length-1].right=right;S.sel=null;render();
+  {const el=document.querySelector(`#rail-inner .feat`),rail=$("rail");if(el)rail.scrollTo({left:Math.max(0,el.offsetLeft-rail.clientWidth/2+el.offsetWidth/2),behavior:"smooth"})}
+}
+function record(){
+  const L=["CONEXIONES · registro de partida (solitario)","Jugador: "+(S.nombre||"(sin nombre)"),
+    "Fecha: "+new Date(S.startedAt).toLocaleDateString("es-CO",{year:"numeric",month:"long",day:"numeric"}),
+    `Resultado: ${S.log.length} turnos, ${S.ok} aciertos, ${S.bad} fallos.`,""];
+  S.log.forEach((e,i)=>L.push(`Turno ${i+1} · ${e.card} (${Y(e.year)}) · ${e.ok?"acierto":"fallo; iba "+(e.right||"en otro lugar")}`));
+  L.push("","Línea final: "+S.line.map(id=>`${C(id).n} (${Y(C(id).y)})`).join(" → "));
+  return L.join("\n");
+}
+document.addEventListener("click",e=>{
+  const t=e.target.closest("button");if(!t)return;
+  if(t.dataset.hand!==undefined){const id=+t.dataset.hand;S.sel=(S.sel===id?null:id);render();return}
+  if(t.dataset.slot!==undefined){if(S.sel!==null)place(+t.dataset.slot);return}
+  if(t.dataset.line!==undefined){const id=S.line[+t.dataset.line];S.flipped[id]=!S.flipped[id];S.last=id;render();return}
+  switch(t.id){
+    case "b-copiar":{const ta=$("t-rec");const sel=()=>{ta.select();$("copiado").textContent="Seleccionado: use Ctrl+C para copiar."};
+      try{navigator.clipboard.writeText(ta.value).then(()=>{$("copiado").textContent="Registro copiado."},sel)}catch(err){sel()}break}
+    case "b-otra":case "si-nueva":S=fresh(S.nombre,$("mazo").value);$("confirm").classList.remove("on");$("nueva").hidden=false;render();window.scrollTo({top:0,behavior:"smooth"});break;
+    case "nueva":$("confirm").classList.add("on");t.hidden=true;break;
+    case "no-nueva":$("confirm").classList.remove("on");$("nueva").hidden=false;$("mazo").value="Colombia";break;
+  }
+});
+document.addEventListener("input",e=>{if(e.target.id==="nombre"){S.nombre=e.target.value;save()}});
+document.addEventListener("change",e=>{if(e.target.id!=="mazo")return;if(!S.log.length||done()){S=fresh(S.nombre,e.target.value);render()}else{$("confirm").classList.add("on");$("nueva").hidden=true}});
+
+function bigLayout(){
+  const g=$("big-grid");if($("big").hidden)return;
+  const n=S.line.length,W=g.clientWidth,H=g.clientHeight;let best=1,score=0;
+  for(let c=1;c<=n;c++){const r=Math.ceil(n/c),cw=W/c,ch=H/r;const sc=Math.min(cw,(ch-70)*1.25);if(sc>score){score=sc;best=c}}
+  if(score<130){const c=Math.max(2,Math.floor(W/150));g.style.gridTemplateColumns=`repeat(${c},minmax(0,1fr))`;g.style.gridTemplateRows="";g.style.gridAutoRows="230px";g.style.overflowY="auto";return}
+  const rows=Math.ceil(n/best);g.style.gridAutoRows="";g.style.overflowY="";g.style.gridTemplateColumns=`repeat(${best},minmax(0,1fr))`;g.style.gridTemplateRows=`repeat(${rows},minmax(0,1fr))`;
+}
+function openBig(){
+  const g=$("big-grid");
+  bigTitle();
+  g.innerHTML=S.line.map((id,i)=>{const d=C(id),im=IMG[d.n];return `<button class="bcard" data-big="${id}" data-cat="${esc(d.c)}"><div class="bimg">${im?`<img src="${im.big||im.img}" alt="">`:`<span class="ini">${INI(d.n)}</span>`}</div><div class="btx"><span class="bn">${i+1}</span><span class="byr">${Y(d.y)}</span><span class="bnm">${esc(d.n)}</span><span class="bdesc">${esc(d.f)} · ${esc(d.l)}. ${esc(d.t)}</span></div></button>`}).join("");
+  resetMapSel();if(EXPLORE)setExplore(false);$("big").hidden=false;document.body.style.overflow="hidden";bigLayout();if(MAPMODE)setTimeout(drawMap,30);
+  try{const r=document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();if(r&&r.catch)r.catch(()=>{})}catch(e){}
+  $("big-close").focus({preventScroll:true});
+}
+function closeBig(){$("big").hidden=true;document.body.style.overflow="";try{if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(()=>{})}catch(e){}}
+window.addEventListener("resize",bigLayout);
+document.addEventListener("fullscreenchange",()=>setTimeout(bigLayout,50));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("big").hidden)closeBig()});
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;
+  if(t.id==="b-big"||t.id==="b-big2"){openBig();return}
+  if(t.id==="big-close"){closeBig();return}
+  if(t.dataset.big!==undefined){t.classList.toggle("open")}
+});
+
+const DEPS=[["Nariño",[[1.26,-78.64,1.43,-78.83,1.56,-78.86,1.64,-79.02,1.82,-78.85,1.78,-78.57,1.91,-78.55,1.9,-78.59,2.03,-78.61,1.98,-78.67,2.19,-78.7,2.43,-78.57,2.38,-78.56,2.5,-78.53,2.65,-78.35,2.54,-78.25,2.66,-78.25,2.54,-78.21,2.49,-78.13,2.52,-78.09,2.65,-78.1,2.59,-77.98,2.48,-77.93,2.38,-77.95,2.18,-77.84,2.14,-77.7,2.22,-77.45,2.17,-77.31,2.06,-77.33,1.96,-77.2,1.86,-77.28,1.69,-77.33,1.67,-77.1,1.73,-76.94,1.61,-76.84,1.5,-76.92,1.31,-76.91,1.19,-77.09,1.0,-77.04,0.7,-77.24,0.58,-77.11,0.39,-77.09,0.34,-77.19,0.41,-77.42,0.65,-77.47,0.72,-77.65,0.84,-77.7,0.81,-77.85,0.87,-77.92,0.9,-78.08,1.26,-78.64],[2.67,-78.15,2.54,-78.1,2.5,-78.13,2.58,-78.21,2.68,-78.21,2.67,-78.15]]],["Putumayo",[[0.36,-76.05,0.46,-76.31,0.4,-76.42,0.25,-76.41,0.22,-76.57,0.28,-76.72,0.23,-76.73,0.24,-76.88,0.35,-77.1,0.59,-77.11,0.7,-77.24,1.02,-77.03,1.07,-77.09,1.19,-77.09,1.24,-76.98,1.3,-76.97,1.31,-76.77,1.43,-76.64,1.3,-76.52,1.12,-76.55,1.02,-76.49,0.97,-76.21,1.04,-76.06,1.03,-75.95,0.88,-75.83,0.85,-75.6,0.75,-75.46,0.74,-75.27,0.5,-75.19,0.47,-75.0,0.27,-74.96,0.15,-74.68,-0.05,-74.66,-0.12,-74.56,-0.13,-74.47,-0.08,-74.43,-0.13,-74.4,-0.12,-74.33,-0.22,-74.25,-0.25,-74.12,-0.39,-73.86,-0.56,-74.41,-0.34,-74.64,-0.31,-74.79,-0.28,-74.76,-0.17,-74.82,-0.22,-74.87,-0.21,-74.93,-0.04,-75.14,-0.03,-75.22,-0.11,-75.28,0.08,-75.63,0.08,-75.79,0.2,-75.95,0.36,-76.05]]],["Chocó",[[8.47,-77.49,8.68,-77.37,8.5,-77.27,8.26,-76.99,8.07,-76.96,7.9,-77.02,7.84,-77.12,7.78,-77.13,7.35,-76.69,7.27,-76.54,7.19,-76.51,6.99,-76.55,7.01,-76.82,6.86,-76.81,6.81,-76.97,6.7,-76.97,6.69,-76.91,6.64,-76.87,6.58,-76.89,6.48,-76.79,6.3,-76.8,6.16,-76.67,6.17,-76.26,6.03,-76.22,5.98,-76.11,5.84,-76.14,5.58,-76.04,5.35,-76.18,5.04,-76.08,4.58,-76.43,4.42,-76.46,4.39,-76.55,4.19,-76.44,4.06,-76.57,4.06,-76.65,3.99,-76.74,4.04,-76.89,4.12,-76.96,4.1,-77.07,4.18,-77.16,4.17,-77.22,4.27,-77.24,4.27,-77.34,4.35,-77.39,4.47,-77.31,4.68,-77.29,4.75,-77.33,4.7,-77.26,4.85,-77.35,5.4,-77.38,5.5,-77.46,5.5,-77.56,5.59,-77.49,5.62,-77.33,5.73,-77.25,6.03,-77.35,6.0,-77.37,6.19,-77.48,6.29,-77.48,6.24,-77.42,6.3,-77.38,6.57,-77.35,6.69,-77.41,6.72,-77.46,6.66,-77.54,6.83,-77.59,6.88,-77.67,6.85,-77.7,7.02,-77.67,7.24,-77.9,7.48,-77.82,7.53,-77.73,7.71,-77.76,7.67,-77.68,7.53,-77.58,7.71,-77.34,7.77,-77.38,7.9,-77.3,7.94,-77.16,8.29,-77.37,8.46,-77.42,8.47,-77.49],[4.15,-77.44,4.22,-77.36,4.21,-77.29,4.18,-77.3,4.15,-77.44],[4.27,-77.35,4.26,-77.27,4.22,-77.3,4.24,-77.33,4.2,-77.55,4.26,-77.44,4.34,-77.43,4.27,-77.35]]],["Guainía",[[1.17,-67.07,1.71,-67.12,2.12,-67.38,2.14,-67.44,2.05,-67.59,1.78,-67.82,1.74,-67.93,1.78,-68.03,2.01,-68.19,1.83,-68.28,1.72,-68.16,1.72,-69.35,1.77,-69.54,1.71,-69.84,1.78,-70.05,1.89,-70.16,2.12,-70.1,2.21,-69.99,2.28,-70.04,2.23,-70.3,2.24,-70.49,2.33,-70.62,2.53,-70.75,2.61,-70.91,2.78,-70.5,2.94,-70.28,3.06,-70.26,3.08,-70.31,3.23,-70.16,3.2,-70.13,3.35,-70.15,3.42,-70.07,3.53,-70.08,3.51,-69.96,3.57,-69.89,3.53,-69.87,3.57,-69.72,3.53,-69.66,3.69,-69.61,3.72,-69.47,3.69,-69.43,3.73,-69.28,3.65,-69.18,3.66,-69.11,3.61,-69.09,3.66,-69.04,3.64,-68.96,3.71,-68.94,3.69,-68.8,3.73,-68.81,3.8,-68.69,3.8,-68.55,3.87,-68.44,3.91,-68.44,3.92,-68.37,4.02,-68.36,4.0,-68.27,3.94,-68.25,3.97,-68.19,3.92,-68.18,4.01,-68.09,3.96,-68.05,4.0,-68.01,3.94,-68.0,3.92,-67.88,4.04,-67.72,3.76,-67.63,3.72,-67.5,3.5,-67.4,3.43,-67.3,3.27,-67.4,2.89,-67.84,2.79,-67.86,2.84,-67.75,2.81,-67.63,2.69,-67.58,2.68,-67.5,2.47,-67.33,2.39,-67.19,2.27,-67.22,2.1,-67.11,1.99,-67.13,1.35,-66.88,1.22,-66.88,1.17,-67.07]]],["Vaupés",[[1.71,-69.84,1.06,-69.85,1.09,-69.75,1.03,-69.42,1.06,-69.34,0.87,-69.15,0.73,-69.19,0.67,-69.14,0.63,-69.16,0.62,-69.3,0.73,-69.48,0.65,-69.62,0.59,-70.05,-0.16,-70.07,-0.31,-69.93,-0.52,-69.62,-0.64,-69.58,-0.73,-69.63,-0.93,-69.53,-1.01,-69.44,-1.24,-69.42,-1.14,-69.56,-1.16,-69.65,-1.06,-69.65,-1.0,-69.72,-1.04,-69.77,-1.06,-69.93,-0.92,-69.9,-0.94,-70.1,-0.97,-70.12,-1.04,-70.07,-1.07,-70.14,-1.02,-70.2,-0.96,-70.19,-0.99,-70.24,-0.93,-70.28,-0.85,-70.21,-0.75,-70.27,-0.72,-70.23,-0.56,-70.24,-0.53,-70.31,-0.42,-70.22,-0.47,-70.45,-0.36,-70.5,-0.28,-70.74,-0.32,-70.85,0.0,-70.98,0.04,-71.14,0.12,-71.17,0.1,-71.27,0.19,-71.42,0.18,-71.54,0.37,-71.79,0.36,-71.85,0.42,-71.84,0.49,-71.94,0.56,-71.93,0.58,-72.0,0.66,-72.04,0.97,-71.76,1.04,-71.61,1.16,-71.55,1.12,-71.51,1.26,-71.55,1.73,-71.39,1.67,-71.26,1.92,-70.9,1.9,-70.66,2.03,-70.2,2.1,-70.1,1.87,-70.16,1.75,-70.0,1.71,-69.84]]],["Amazonas",[[-1.24,-69.42,-4.24,-69.96,-4.13,-70.03,-4.03,-70.19,-3.92,-70.22,-3.83,-70.31,-3.88,-70.49,-3.78,-70.73,-2.72,-70.05,-2.63,-70.09,-2.67,-70.15,-2.55,-70.27,-2.56,-70.36,-2.49,-70.36,-2.5,-70.45,-2.41,-70.58,-2.45,-70.65,-2.33,-70.71,-2.21,-70.9,-2.2,-71.02,-2.26,-71.03,-2.25,-71.12,-2.34,-71.21,-2.38,-71.42,-2.26,-71.46,-2.32,-71.5,-2.22,-71.54,-2.19,-71.73,-2.13,-71.75,-2.32,-71.95,-2.32,-72.06,-2.41,-72.18,-2.45,-72.38,-2.33,-72.64,-2.42,-72.71,-2.37,-72.73,-2.43,-72.94,-2.34,-72.99,-2.3,-73.06,-2.35,-73.08,-2.29,-73.16,-2.21,-73.2,-2.07,-73.11,-1.79,-73.19,-1.74,-73.26,-1.79,-73.35,-1.7,-73.51,-1.48,-73.5,-1.42,-73.57,-1.26,-73.64,-1.18,-73.75,-1.21,-73.86,-1.07,-73.98,-1.08,-74.04,-0.99,-74.08,-1.02,-74.12,-0.97,-74.27,-0.86,-74.34,-0.84,-74.29,-0.72,-74.39,-0.56,-74.41,-0.39,-73.86,-0.39,-73.71,-0.52,-73.55,-0.51,-73.33,-0.61,-73.17,-0.53,-73.0,-0.6,-72.88,-0.56,-72.75,-0.68,-72.55,-0.56,-72.42,-0.62,-72.28,-0.47,-72.23,-0.26,-72.04,-0.22,-71.77,-0.09,-71.69,0.13,-71.32,0.12,-71.17,0.04,-71.14,-0.01,-70.97,-0.32,-70.85,-0.28,-70.74,-0.36,-70.5,-0.47,-70.45,-0.42,-70.22,-0.53,-70.31,-0.56,-70.24,-0.72,-70.23,-0.75,-70.27,-0.85,-70.21,-0.93,-70.28,-0.99,-70.24,-0.96,-70.19,-1.02,-70.2,-1.07,-70.14,-1.04,-70.07,-0.97,-70.12,-0.94,-70.1,-0.92,-69.9,-1.06,-69.93,-1.04,-69.77,-1.0,-69.72,-1.06,-69.65,-1.16,-69.65,-1.14,-69.56,-1.24,-69.42]]],["La Guajira",[[11.85,-71.33,11.65,-71.99,11.15,-72.27,11.12,-72.5,10.43,-72.92,10.4,-73.14,10.46,-73.18,10.63,-73.08,10.73,-73.25,10.85,-73.28,10.85,-73.61,11.01,-73.65,11.28,-73.57,11.29,-73.29,11.71,-72.74,11.89,-72.26,12.1,-72.14,12.23,-72.17,12.26,-71.97,12.19,-72.02,12.17,-71.94,12.21,-71.87,12.26,-71.87,12.28,-71.96,12.38,-71.83,12.32,-71.8,12.41,-71.73,12.37,-71.69,12.43,-71.63,12.42,-71.68,12.45,-71.69,12.41,-71.73,12.46,-71.7,12.44,-71.51,12.31,-71.23,12.07,-71.11,11.85,-71.33]]],["Cesar",[[10.43,-72.92,9.81,-72.99,9.19,-73.39,9.17,-73.36,9.12,-73.44,8.78,-73.43,8.61,-73.56,8.46,-73.49,8.38,-73.53,8.32,-73.46,8.37,-73.41,8.46,-73.42,8.44,-73.36,8.13,-73.41,7.95,-73.29,7.75,-73.4,7.68,-73.48,7.74,-73.75,7.93,-73.67,8.08,-73.77,8.21,-73.8,8.46,-73.76,8.64,-73.83,8.82,-73.81,8.89,-73.87,9.06,-73.8,9.18,-73.88,9.2,-73.96,9.4,-74.0,9.5,-74.14,9.59,-74.03,9.6,-73.78,9.79,-73.84,10.05,-74.07,10.17,-74.05,10.37,-73.91,10.39,-73.77,10.51,-73.57,10.65,-73.61,10.74,-73.56,10.77,-73.65,10.85,-73.61,10.85,-73.28,10.73,-73.25,10.63,-73.08,10.46,-73.18,10.4,-73.14,10.43,-72.92]]],["Norte de Santander",[[9.3,-73.01,9.1,-72.96,9.11,-72.79,8.65,-72.68,8.34,-72.39,8.07,-72.33,7.94,-72.49,7.83,-72.45,7.48,-72.48,7.41,-72.41,7.38,-72.21,7.09,-72.1,7.01,-71.99,7.04,-72.18,6.98,-72.24,7.01,-72.29,6.88,-72.38,6.92,-72.5,6.88,-72.55,7.0,-72.56,6.97,-72.67,7.06,-72.88,7.16,-72.83,7.26,-72.88,7.36,-72.84,7.61,-72.99,7.63,-73.22,7.54,-73.26,7.55,-73.36,7.6,-73.5,7.75,-73.64,7.7,-73.45,7.96,-73.29,8.03,-73.38,8.13,-73.41,8.44,-73.36,8.46,-73.42,8.37,-73.41,8.33,-73.46,8.39,-73.53,8.46,-73.49,8.59,-73.56,8.78,-73.43,9.12,-73.44,9.15,-73.41,9.17,-73.21,9.3,-73.01]]],["Arauca",[[7.01,-71.96,6.98,-71.85,7.05,-71.62,7.03,-71.29,6.96,-71.18,7.1,-70.7,7.09,-70.58,7.01,-70.51,6.94,-70.32,6.97,-70.13,6.12,-69.43,6.06,-69.53,6.03,-69.86,6.27,-70.17,6.28,-70.35,6.21,-70.73,6.27,-71.21,6.2,-71.46,6.2,-71.72,6.07,-72.16,6.14,-72.26,6.3,-72.35,6.43,-72.27,6.5,-72.14,6.73,-72.1,7.01,-71.96]]],["Boyacá",[[7.04,-72.18,7.0,-71.97,6.73,-72.1,6.5,-72.14,6.42,-72.28,6.2,-72.42,6.08,-72.34,5.85,-72.45,5.68,-72.24,5.51,-72.32,5.56,-72.42,5.28,-72.69,5.38,-72.81,5.35,-72.86,5.16,-72.95,5.08,-72.91,4.98,-72.97,4.99,-73.03,4.73,-73.05,4.66,-73.11,4.68,-73.22,4.87,-73.4,4.92,-73.55,5.07,-73.48,5.46,-73.65,5.51,-73.79,5.56,-73.81,5.37,-74.0,5.46,-74.1,5.49,-74.25,5.83,-74.34,5.77,-74.44,5.77,-74.66,6.0,-74.57,6.14,-74.61,6.28,-74.52,6.07,-74.42,6.05,-74.27,5.85,-74.26,5.9,-74.17,5.73,-73.97,5.75,-73.89,5.71,-73.88,5.76,-73.74,5.72,-73.65,5.99,-73.59,6.11,-73.5,6.0,-73.38,5.85,-73.47,5.76,-73.4,5.98,-73.22,5.94,-73.02,6.12,-72.89,6.23,-72.75,6.46,-72.73,6.57,-72.79,6.53,-72.71,6.43,-72.66,6.49,-72.55,6.76,-72.48,6.92,-72.5,6.88,-72.38,7.01,-72.29,6.98,-72.24,7.04,-72.18]]],["Vichada",[[6.19,-67.46,6.11,-67.49,5.98,-67.42,5.78,-67.63,5.54,-67.62,5.38,-67.81,5.3,-67.84,5.06,-67.79,4.53,-67.88,4.43,-67.79,4.24,-67.8,4.06,-67.71,3.95,-67.8,3.94,-68.0,4.0,-68.01,3.96,-68.05,4.01,-68.09,3.92,-68.17,3.97,-68.19,3.94,-68.25,4.0,-68.27,4.02,-68.36,3.92,-68.37,3.91,-68.44,3.87,-68.44,3.8,-68.55,3.8,-68.69,3.73,-68.81,3.69,-68.8,3.71,-68.94,3.64,-68.96,3.66,-69.04,3.61,-69.09,3.66,-69.11,3.65,-69.18,3.73,-69.28,3.69,-69.6,3.53,-69.66,3.57,-69.72,3.53,-69.87,3.57,-69.89,3.51,-69.96,3.53,-70.08,3.42,-70.07,3.35,-70.15,3.2,-70.13,3.23,-70.16,3.08,-70.31,3.06,-70.26,2.96,-70.28,2.85,-70.38,2.78,-70.5,2.87,-70.69,2.78,-70.73,2.87,-70.96,2.81,-70.98,2.85,-70.99,2.87,-71.06,4.92,-71.06,5.12,-70.96,5.31,-70.7,5.39,-70.68,5.53,-70.45,5.62,-70.12,6.05,-69.82,6.06,-69.53,6.16,-69.33,6.08,-69.25,6.22,-69.06,6.14,-68.64,6.19,-68.45,6.21,-68.02,6.31,-67.83,6.27,-67.57,6.19,-67.46]]],["Cauca",[[2.65,-78.07,2.67,-77.95,2.63,-77.89,2.58,-77.9,2.59,-77.76,2.63,-77.75,2.76,-77.81,2.79,-77.73,2.82,-77.76,2.79,-77.69,2.82,-77.74,2.85,-77.71,2.85,-77.64,2.9,-77.72,2.93,-77.7,2.9,-77.64,2.99,-77.63,2.98,-77.72,3.23,-77.48,3.25,-77.54,3.3,-77.46,3.17,-77.37,3.12,-77.26,3.19,-77.11,3.09,-76.87,3.18,-76.78,3.11,-76.67,3.11,-76.55,3.2,-76.45,3.32,-76.44,3.21,-76.08,3.1,-76.11,3.04,-76.04,2.91,-76.02,2.67,-75.78,2.53,-75.82,2.47,-75.8,2.43,-75.88,2.49,-75.97,2.35,-76.23,2.42,-76.38,2.27,-76.36,2.13,-76.42,2.12,-76.55,1.96,-76.6,1.66,-76.38,1.58,-76.15,1.34,-76.28,1.2,-76.3,1.14,-76.26,1.13,-76.16,1.02,-76.08,0.98,-76.35,1.04,-76.51,1.12,-76.55,1.3,-76.52,1.44,-76.65,1.31,-76.77,1.31,-76.91,1.5,-76.92,1.6,-76.84,1.72,-76.92,1.67,-77.1,1.69,-77.33,1.86,-77.28,1.96,-77.2,2.06,-77.33,2.17,-77.31,2.22,-77.45,2.14,-77.7,2.18,-77.84,2.38,-77.95,2.56,-77.95,2.65,-78.07]]],["Valle del Cauca",[[3.17,-77.37,3.34,-77.47,3.39,-77.38,3.32,-77.32,3.4,-77.37,3.51,-77.33,3.47,-77.26,3.55,-77.32,3.58,-77.21,3.66,-77.19,3.68,-77.12,3.68,-77.17,3.72,-77.13,3.7,-77.19,3.74,-77.2,3.73,-77.13,3.76,-77.17,3.78,-77.13,3.81,-77.15,3.8,-77.12,3.92,-77.03,3.93,-77.13,3.85,-77.18,3.86,-77.29,3.97,-77.3,3.98,-77.21,3.98,-77.24,4.07,-77.19,4.11,-77.26,3.93,-77.36,4.01,-77.43,4.15,-77.44,4.18,-77.3,4.24,-77.25,4.17,-77.22,4.18,-77.16,4.1,-77.07,4.12,-76.96,4.04,-76.89,4.0,-76.76,4.06,-76.65,4.06,-76.57,4.2,-76.44,4.24,-76.5,4.39,-76.55,4.42,-76.46,4.58,-76.43,5.04,-76.08,4.87,-75.98,4.87,-75.92,4.77,-75.92,4.71,-75.71,4.66,-75.72,4.66,-75.82,4.61,-75.86,4.42,-75.89,4.35,-75.79,4.12,-75.84,4.04,-75.75,3.65,-75.99,3.21,-76.08,3.32,-76.44,3.2,-76.45,3.11,-76.55,3.11,-76.67,3.18,-76.78,3.09,-76.87,3.19,-77.11,3.12,-77.26,3.17,-77.37]]],["Antioquia",[[8.26,-76.99,8.19,-76.92,8.13,-76.94,8.14,-76.83,8.1,-76.83,8.06,-76.87,8.03,-76.83,8.04,-76.91,7.96,-76.93,7.91,-76.85,7.92,-76.76,8.05,-76.73,8.42,-76.77,8.55,-76.95,8.62,-76.89,8.69,-76.66,8.75,-76.65,8.87,-76.44,8.67,-76.35,8.58,-76.23,8.45,-76.21,8.1,-76.42,7.74,-76.51,7.38,-76.41,7.37,-75.86,7.5,-75.77,7.57,-75.59,7.81,-75.46,8.05,-75.23,8.07,-74.94,8.19,-74.83,7.93,-74.55,7.72,-74.48,7.61,-74.57,7.42,-74.56,7.36,-74.47,7.49,-74.36,7.2,-74.41,7.01,-74.34,7.0,-74.25,7.3,-73.93,7.02,-73.89,6.79,-74.11,6.63,-74.39,6.42,-74.38,6.22,-74.58,6.0,-74.57,5.77,-74.66,5.77,-74.72,5.69,-74.78,5.74,-74.87,5.66,-75.09,5.54,-75.13,5.43,-75.28,5.67,-75.38,5.67,-75.49,5.74,-75.6,5.52,-75.59,5.56,-75.72,5.49,-75.93,5.64,-76.1,5.98,-76.11,6.03,-76.22,6.17,-76.26,6.18,-76.71,6.3,-76.8,6.48,-76.79,6.58,-76.89,6.64,-76.87,6.69,-76.91,6.7,-76.97,6.81,-76.97,6.86,-76.81,7.01,-76.82,6.99,-76.55,7.19,-76.51,7.27,-76.54,7.35,-76.69,7.78,-77.13,7.84,-77.12,7.9,-77.02,8.07,-76.96,8.26,-76.99]]],["Córdoba",[[8.87,-76.44,9.0,-76.26,9.33,-76.1,9.44,-75.94,9.44,-75.81,9.41,-75.85,9.39,-75.81,9.42,-75.7,9.35,-75.7,9.04,-75.21,8.92,-75.21,8.84,-75.36,8.49,-75.31,8.4,-75.18,8.49,-74.94,8.35,-74.81,8.25,-74.8,8.07,-74.94,8.05,-75.23,7.81,-75.46,7.57,-75.59,7.5,-75.77,7.37,-75.86,7.38,-76.41,7.74,-76.51,8.1,-76.42,8.45,-76.21,8.58,-76.23,8.67,-76.35,8.87,-76.44]]],["Sucre",[[9.42,-75.7,9.45,-75.62,9.62,-75.58,9.69,-75.62,9.7,-75.71,9.78,-75.64,10.09,-75.58,10.14,-75.49,10.05,-75.54,10.04,-75.48,9.92,-75.48,9.88,-75.33,9.64,-75.37,9.68,-75.3,9.64,-75.18,9.53,-75.01,9.47,-75.02,9.44,-74.9,9.35,-74.94,9.18,-74.9,8.81,-74.54,8.73,-74.6,8.46,-74.55,8.33,-74.64,8.28,-74.8,8.35,-74.81,8.49,-74.94,8.4,-75.18,8.48,-75.3,8.84,-75.36,8.92,-75.21,9.04,-75.21,9.35,-75.7,9.42,-75.7]]],["Bolívar",[[10.09,-75.58,10.24,-75.53,10.13,-75.7,10.3,-75.59,10.32,-75.52,10.39,-75.52,10.4,-75.58,10.49,-75.5,10.43,-75.49,10.5,-75.49,10.57,-75.52,10.74,-75.26,10.63,-75.23,10.5,-75.25,10.34,-74.98,10.27,-74.92,10.14,-74.94,10.03,-74.81,9.92,-74.88,9.63,-74.78,9.45,-74.8,9.38,-74.64,9.24,-74.53,9.27,-74.43,9.23,-74.41,9.21,-74.31,9.05,-74.15,9.06,-74.04,8.99,-73.98,8.97,-73.87,8.91,-73.88,8.82,-73.81,8.64,-73.83,8.39,-73.75,8.16,-73.79,8.04,-73.87,7.8,-73.82,7.61,-73.83,7.49,-73.91,7.3,-73.93,7.0,-74.25,7.01,-74.34,7.17,-74.4,7.49,-74.36,7.36,-74.49,7.47,-74.58,7.61,-74.57,7.72,-74.48,7.93,-74.55,8.19,-74.83,8.28,-74.8,8.32,-74.66,8.41,-74.57,8.73,-74.6,8.81,-74.54,9.18,-74.9,9.35,-74.94,9.44,-74.9,9.47,-75.02,9.53,-75.01,9.64,-75.18,9.68,-75.3,9.64,-75.37,9.88,-75.33,9.92,-75.48,10.04,-75.48,10.05,-75.54,10.14,-75.49,10.09,-75.58]]],["Atlántico",[[10.5,-75.25,10.83,-75.22,10.9,-75.05,11.05,-74.92,11.09,-74.85,11.01,-74.77,10.9,-74.72,10.58,-74.73,10.27,-74.92,10.41,-75.08,10.4,-75.13,10.48,-75.17,10.5,-75.25]]],["Magdalena",[[11.09,-74.85,11.0,-74.52,10.99,-74.3,10.98,-74.49,10.85,-74.48,10.87,-74.6,10.78,-74.6,10.83,-74.56,10.76,-74.54,10.76,-74.5,10.84,-74.51,10.75,-74.46,10.75,-74.4,11.08,-74.22,11.24,-74.23,11.34,-74.15,11.28,-73.57,11.0,-73.65,10.85,-73.61,10.77,-73.65,10.74,-73.56,10.65,-73.61,10.51,-73.57,10.36,-73.92,10.08,-74.07,9.79,-73.84,9.6,-73.78,9.59,-74.03,9.5,-74.14,9.4,-74.0,9.2,-73.96,9.18,-73.88,9.06,-73.8,8.89,-73.87,8.97,-73.87,8.99,-73.98,9.06,-74.04,9.05,-74.15,9.21,-74.31,9.23,-74.41,9.27,-74.43,9.24,-74.53,9.38,-74.64,9.45,-74.8,9.63,-74.78,9.92,-74.88,10.03,-74.8,10.17,-74.95,10.61,-74.73,10.92,-74.73,11.09,-74.85]]],["Caquetá",[[2.52,-75.16,2.64,-75.0,2.77,-75.05,2.94,-74.92,2.9,-74.71,2.72,-74.6,2.38,-74.66,2.18,-74.54,2.04,-74.62,1.87,-74.55,1.63,-73.92,1.62,-73.68,1.3,-73.44,1.21,-73.43,0.94,-73.14,0.95,-73.01,1.05,-72.89,1.19,-72.83,1.15,-72.76,1.2,-72.74,1.19,-72.67,1.04,-72.43,0.74,-72.24,0.66,-72.02,0.58,-72.0,0.56,-71.93,0.49,-71.94,0.42,-71.84,0.36,-71.85,0.37,-71.79,0.18,-71.54,0.19,-71.42,0.13,-71.32,-0.09,-71.69,-0.22,-71.77,-0.25,-72.01,-0.33,-72.13,-0.62,-72.28,-0.56,-72.42,-0.68,-72.56,-0.56,-72.75,-0.6,-72.88,-0.53,-73.0,-0.61,-73.17,-0.51,-73.33,-0.52,-73.55,-0.39,-73.7,-0.37,-73.94,-0.25,-74.12,-0.23,-74.24,-0.12,-74.33,-0.13,-74.4,-0.08,-74.43,-0.13,-74.47,-0.1,-74.59,-0.05,-74.66,0.15,-74.68,0.27,-74.96,0.47,-75.0,0.5,-75.19,0.73,-75.26,0.75,-75.46,0.85,-75.6,0.88,-75.83,1.03,-75.93,1.04,-76.06,1.18,-76.3,1.34,-76.28,1.56,-76.16,1.56,-75.98,1.68,-75.84,2.35,-75.31,2.53,-75.23,2.52,-75.16]]],["Huila",[[3.11,-74.82,2.77,-75.05,2.64,-75.0,2.53,-75.12,2.53,-75.23,2.35,-75.31,1.57,-75.96,1.64,-76.35,1.88,-76.58,2.1,-76.57,2.13,-76.42,2.27,-76.36,2.42,-76.38,2.35,-76.23,2.49,-75.97,2.43,-75.88,2.47,-75.8,2.72,-75.81,2.93,-76.03,2.89,-75.81,3.09,-75.63,3.35,-75.49,3.41,-75.36,3.37,-75.26,3.43,-75.04,3.3,-75.07,3.29,-74.91,3.44,-74.78,3.61,-74.73,3.77,-74.56,3.68,-74.5,3.49,-74.62,3.26,-74.65,3.11,-74.82]]],["Guaviare",[[0.92,-73.08,1.21,-73.43,1.3,-73.44,1.58,-73.67,2.25,-73.66,2.39,-73.6,2.35,-73.46,2.39,-73.44,2.33,-73.43,2.34,-73.25,2.39,-73.22,2.36,-73.14,2.47,-72.93,2.51,-72.94,2.6,-72.82,2.56,-72.74,2.61,-72.67,2.56,-72.64,2.62,-72.61,2.58,-72.58,2.68,-72.55,2.75,-72.28,2.7,-72.25,2.85,-72.18,2.8,-71.98,2.86,-71.79,2.82,-71.76,2.88,-71.74,2.82,-71.62,2.88,-71.44,2.86,-71.33,2.91,-71.29,2.86,-71.23,2.87,-71.04,2.81,-70.98,2.87,-70.97,2.83,-70.92,2.86,-70.9,2.82,-70.89,2.78,-70.73,2.87,-70.69,2.84,-70.59,2.78,-70.5,2.6,-70.91,2.53,-70.75,2.33,-70.62,2.24,-70.49,2.23,-70.3,2.29,-70.05,2.22,-70.0,2.03,-70.2,1.9,-70.67,1.92,-70.9,1.67,-71.26,1.73,-71.39,1.26,-71.55,1.12,-71.51,1.16,-71.55,1.04,-71.61,0.97,-71.76,0.66,-72.04,0.74,-72.24,1.04,-72.43,1.2,-72.7,1.15,-72.76,1.2,-72.82,1.17,-72.86,1.05,-72.89,0.92,-73.08]]],["Caldas",[[5.77,-74.66,5.56,-74.64,5.29,-74.75,5.29,-75.01,5.16,-75.13,5.13,-75.29,5.06,-75.35,4.88,-75.33,4.8,-75.38,4.92,-75.49,4.97,-75.64,4.95,-75.71,5.05,-75.75,4.92,-75.82,4.97,-75.9,5.04,-75.93,5.12,-75.89,5.11,-75.84,5.27,-75.82,5.26,-75.69,5.3,-75.64,5.4,-75.72,5.37,-75.86,5.49,-75.86,5.56,-75.72,5.52,-75.59,5.74,-75.61,5.67,-75.49,5.67,-75.38,5.43,-75.28,5.54,-75.13,5.66,-75.09,5.74,-74.87,5.69,-74.78,5.77,-74.72,5.77,-74.66]]],["Casanare",[[6.35,-72.32,6.23,-72.32,6.07,-72.13,6.2,-71.72,6.2,-71.46,6.27,-71.21,6.21,-70.67,6.28,-70.35,6.25,-70.12,6.03,-69.86,5.65,-70.09,5.53,-70.45,5.4,-70.66,5.31,-70.7,5.12,-70.96,4.93,-71.05,4.82,-71.22,4.58,-71.81,4.4,-72.01,4.45,-72.15,4.41,-72.32,4.34,-72.37,4.32,-72.5,4.35,-72.56,4.31,-72.6,4.3,-72.72,4.69,-73.04,4.83,-73.07,4.99,-73.03,4.98,-72.97,5.08,-72.91,5.16,-72.95,5.35,-72.86,5.38,-72.81,5.28,-72.69,5.56,-72.42,5.51,-72.32,5.68,-72.24,5.87,-72.45,5.9,-72.39,6.08,-72.34,6.2,-72.42,6.35,-72.32]]],["Meta",[[2.95,-74.9,3.11,-74.82,3.26,-74.65,3.49,-74.62,3.7,-74.49,3.68,-74.43,4.01,-74.22,4.01,-74.12,4.15,-73.92,4.2,-73.75,4.42,-73.81,4.52,-73.71,4.48,-73.62,4.3,-73.53,4.32,-73.37,4.23,-73.14,4.73,-73.05,4.3,-72.73,4.31,-72.6,4.35,-72.56,4.32,-72.5,4.34,-72.37,4.41,-72.32,4.45,-72.15,4.39,-72.05,4.58,-71.81,4.82,-71.22,4.92,-71.06,2.87,-71.06,2.86,-71.23,2.91,-71.3,2.86,-71.33,2.88,-71.44,2.82,-71.62,2.88,-71.74,2.82,-71.76,2.86,-71.79,2.8,-71.98,2.87,-72.12,2.85,-72.19,2.7,-72.25,2.75,-72.28,2.68,-72.55,2.58,-72.58,2.62,-72.61,2.56,-72.64,2.61,-72.67,2.56,-72.74,2.6,-72.82,2.51,-72.94,2.47,-72.93,2.36,-73.14,2.39,-73.22,2.34,-73.25,2.33,-73.43,2.39,-73.44,2.35,-73.46,2.38,-73.61,2.25,-73.66,1.62,-73.68,1.63,-73.92,1.87,-74.55,2.04,-74.62,2.18,-74.54,2.38,-74.66,2.72,-74.6,2.9,-74.71,2.95,-74.9]]],["Bogotá",[[4.01,-74.15,4.01,-74.22,3.68,-74.43,3.7,-74.49,3.91,-74.37,4.11,-74.34,4.11,-74.26,4.5,-74.18,4.63,-74.22,4.84,-74.08,4.82,-74.01,4.65,-74.03,4.63,-74.0,4.43,-74.12,4.25,-74.15,4.14,-74.09,4.01,-74.15]]],["Santander",[[7.73,-73.63,7.6,-73.5,7.55,-73.36,7.54,-73.26,7.63,-73.22,7.61,-72.99,7.36,-72.84,7.26,-72.88,7.16,-72.83,7.06,-72.88,6.97,-72.67,7.0,-72.56,6.88,-72.55,6.92,-72.5,6.84,-72.48,6.72,-72.48,6.5,-72.54,6.44,-72.62,6.57,-72.79,6.46,-72.73,6.24,-72.75,5.94,-73.02,5.98,-73.22,5.86,-73.29,5.86,-73.35,5.76,-73.42,5.85,-73.47,6.0,-73.38,6.11,-73.5,5.92,-73.61,5.72,-73.64,5.76,-73.74,5.71,-73.88,5.75,-74.01,5.9,-74.17,5.85,-74.26,6.05,-74.27,6.07,-74.42,6.28,-74.52,6.42,-74.38,6.63,-74.39,6.79,-74.11,7.02,-73.89,7.25,-73.94,7.49,-73.91,7.6,-73.84,7.78,-73.82,8.04,-73.87,8.16,-73.79,7.93,-73.67,7.74,-73.75,7.73,-73.63]]],["Tolima",[[3.77,-74.56,3.61,-74.73,3.44,-74.78,3.29,-74.91,3.3,-75.07,3.43,-75.04,3.37,-75.26,3.41,-75.36,3.35,-75.49,3.09,-75.63,2.89,-75.81,2.93,-76.03,3.04,-76.04,3.11,-76.11,3.71,-75.96,4.3,-75.6,4.56,-75.51,4.64,-75.42,4.88,-75.33,5.09,-75.34,5.16,-75.13,5.29,-75.01,5.31,-74.83,5.27,-74.74,4.99,-74.73,4.79,-74.77,4.72,-74.83,4.5,-74.81,4.28,-74.89,4.28,-74.78,4.21,-74.65,4.27,-74.58,4.24,-74.52,4.13,-74.48,3.77,-74.56]]],["Quindío",[[4.72,-75.39,4.48,-75.56,4.3,-75.6,4.14,-75.71,4.08,-75.76,4.11,-75.83,4.35,-75.79,4.42,-75.89,4.66,-75.82,4.66,-75.72,4.72,-75.7,4.67,-75.48,4.72,-75.39]]],["Cundinamarca",[[3.7,-74.49,3.77,-74.56,4.13,-74.48,4.24,-74.52,4.27,-74.58,4.21,-74.65,4.28,-74.78,4.28,-74.89,4.5,-74.81,4.72,-74.83,4.79,-74.77,4.99,-74.73,5.3,-74.75,5.46,-74.66,5.75,-74.65,5.77,-74.44,5.83,-74.35,5.48,-74.24,5.46,-74.1,5.37,-74.0,5.56,-73.8,5.51,-73.79,5.46,-73.65,5.24,-73.52,5.07,-73.48,4.93,-73.55,4.89,-73.52,4.88,-73.41,4.68,-73.22,4.66,-73.11,4.73,-73.05,4.23,-73.14,4.32,-73.37,4.3,-73.53,4.48,-73.62,4.52,-73.7,4.42,-73.81,4.2,-73.75,4.01,-74.15,4.14,-74.09,4.25,-74.15,4.43,-74.12,4.63,-74.0,4.65,-74.03,4.82,-74.01,4.83,-74.09,4.63,-74.22,4.5,-74.18,4.11,-74.26,4.11,-74.34,3.91,-74.37,3.7,-74.49]]],["Risaralda",[[5.49,-75.86,5.37,-75.86,5.4,-75.72,5.3,-75.64,5.26,-75.69,5.27,-75.82,5.11,-75.84,5.12,-75.89,5.04,-75.93,4.97,-75.9,4.92,-75.82,5.05,-75.75,4.95,-75.71,4.97,-75.64,4.92,-75.49,4.8,-75.38,4.69,-75.44,4.73,-75.85,4.78,-75.85,4.77,-75.92,4.87,-75.92,4.87,-75.98,5.04,-76.08,5.31,-76.18,5.41,-76.17,5.46,-76.09,5.58,-76.04,5.49,-75.86]]]];
+const NB=[[0.75,-66.3,1.22,-66.88,2.39,-67.21,2.79,-67.62,2.79,-67.86,3.42,-67.31,3.86,-67.66,4.51,-67.86,5.27,-67.82,5.93,-67.47,6.18,-67.48,6.29,-67.86,6.16,-68.47,6.2,-68.94,6.12,-69.43,6.95,-70.13,7.09,-70.74,6.99,-71.13,7.03,-72.01,7.37,-72.21,7.42,-72.39,7.52,-72.47,7.97,-72.45,8.09,-72.36,8.29,-72.39,8.63,-72.67,9.11,-72.8,9.14,-72.96,9.26,-73.06,9.19,-73.37,9.79,-73.01,10.49,-72.87,10.84,-72.69,11.11,-72.45,11.2,-72.25,11.67,-71.96,11.86,-71.32,11.72,-71.49,11.57,-71.96,11.19,-71.84,11.01,-71.64,10.99,-71.73,10.66,-71.59,10.44,-71.66,9.82,-72.11,9.34,-71.76,9.13,-71.74,9.05,-71.62,9.16,-71.24,9.35,-71.09,9.71,-71.05,10.53,-71.49,10.78,-71.54,10.84,-71.46,10.96,-71.47,11.37,-70.23,11.52,-70.1,11.47,-69.8,11.67,-69.82,11.62,-70.19,11.89,-70.29,12.1,-70.2,12.18,-70.0,12.05,-69.86,11.48,-69.63,11.52,-69.23,11.43,-68.83,11.16,-68.4,10.88,-68.27,10.69,-68.3,10.49,-68.14,10.61,-66.2,0.76,-66.2,0.75,-66.3],[-4.3,-69.97,-4.3,-70.24,-4.15,-70.4,-4.16,-70.72,-4.35,-70.97,-4.5,-71.84,-4.6,-72.02,-4.6,-78.76,-4.56,-78.69,-4.33,-78.68,-3.78,-78.42,-3.4,-78.35,-3.47,-78.16,-3.35,-78.18,-2.98,-77.86,-2.56,-76.68,-2.13,-76.09,-1.53,-75.57,-0.92,-75.41,-0.95,-75.25,-0.59,-75.26,-0.12,-75.63,-0.14,-75.34,-0.04,-75.22,-0.2,-74.8,-0.37,-74.62,-0.58,-74.42,-0.97,-74.25,-1.25,-73.66,-1.45,-73.52,-1.69,-73.5,-1.83,-73.2,-2.28,-73.15,-2.39,-72.94,-2.4,-72.22,-2.15,-71.75,-2.33,-71.4,-2.21,-70.97,-2.66,-70.1,-2.75,-70.07,-3.78,-70.74,-3.87,-70.53,-3.81,-70.34,-4.3,-69.97],[-4.31,-80.2,-4.48,-79.8,-4.45,-79.64,-4.6,-79.51,-4.6,-80.2,-4.31,-80.2],[8.64,-77.39,8.5,-77.48,7.97,-77.2,7.84,-77.35,7.71,-77.35,7.57,-77.54,7.7,-77.76,7.54,-77.74,7.23,-77.9,7.54,-78.17,8.06,-78.42,8.09,-78.29,8.25,-78.28,8.39,-78.14,8.13,-77.76,8.33,-78.01,8.5,-78.1,8.4,-78.22,8.51,-78.4,8.36,-78.41,8.63,-78.51,8.93,-78.96,9.01,-79.44,8.85,-79.69,8.64,-79.82,8.6,-79.75,8.31,-80.2,9.19,-80.2,9.6,-79.58,9.54,-79.11,9.43,-78.93,9.41,-78.5,9.24,-78.08,8.64,-77.39],[7.79,-80.2,7.5,-80.01,7.43,-80.2,7.79,-80.2],[8.23,-78.92,8.44,-78.96,8.46,-78.88,8.35,-78.84,8.23,-78.92],[-0.11,-75.28,-0.16,-75.63,-0.59,-75.26,-0.95,-75.25,-0.92,-75.41,-1.53,-75.57,-2.13,-76.09,-2.56,-76.68,-2.98,-77.86,-3.35,-78.18,-3.47,-78.16,-3.4,-78.35,-3.78,-78.42,-4.33,-78.68,-4.56,-78.69,-4.6,-79.51,-4.45,-79.64,-4.48,-79.8,-4.31,-80.2,-3.34,-80.2,-3.16,-79.96,-2.58,-79.73,-2.07,-79.84,-2.55,-79.93,-2.56,-80.03,-2.35,-80.01,-2.59,-80.2,-0.07,-80.2,0.16,-80.05,0.78,-80.09,0.83,-80.04,1.21,-78.9,1.3,-78.83,1.46,-78.86,0.97,-78.18,0.84,-77.7,0.72,-77.65,0.64,-77.47,0.39,-77.4,0.24,-76.49,0.4,-76.39,0.44,-76.27,0.09,-75.78,-0.11,-75.28],[-3.01,-80.15,-2.74,-80.2,-2.67,-80.08,-2.73,-79.91,-2.85,-80.09,-3.01,-80.15],[1.25,-78.91,1.29,-78.99,1.36,-78.9,1.25,-78.91],[1.22,-66.88,0.77,-66.35,0.76,-66.2,-4.6,-66.2,-4.6,-72.02,-4.5,-71.84,-4.35,-70.97,-4.16,-70.72,-4.15,-70.4,-4.3,-70.24,-4.3,-69.97,-1.19,-69.4,-0.76,-69.61,-0.51,-69.63,-0.14,-70.07,0.58,-70.05,0.73,-69.47,0.63,-69.28,0.66,-69.15,0.86,-69.16,1.05,-69.31,1.06,-69.85,1.71,-69.85,1.77,-69.54,1.72,-68.18,1.85,-68.26,1.99,-68.19,1.75,-67.94,2.07,-67.56,2.12,-67.4,1.7,-67.12,1.19,-67.08,1.22,-66.88]];
+const GEO={"Palonegro, Santander":[7.13,-73.2],"Ciénaga, Magdalena":[11.01,-74.25],"Bogotá":[4.6,-74.08],"Marquetalia, Planadas, Tolima":[3.22,-75.85],"San Vicente de Chucurí, Santander":[6.88,-73.41],"Alto Sinú, Córdoba":[7.6,-76.2],"Aracataca, Magdalena":[10.59,-74.19],"Tibú, Catatumbo":[8.64,-72.74],"Segovia, Antioquia":[7.08,-74.7],"Santo Domingo, Cauca":[2.98,-76.25],"Dabeiba, Antioquia":[7.0,-76.26],"Apartadó, Antioquia":[7.88,-76.63],"Mosquera, Cundinamarca":[4.71,-74.23],"San José de Apartadó, Antioquia":[7.83,-76.52],"Urabá, Antioquia":[8.05,-76.72],"Mapiripán, Meta":[2.89,-72.13],"Machuca, Segovia, Antioquia":[7.03,-74.83],"San Vicente del Caguán, Caquetá":[2.12,-74.77],"Medellín, Antioquia":[6.25,-75.57],"La Gabarra, Tibú":[8.83,-72.75],"El Salado, El Carmen de Bolívar":[9.75,-75.1],"Suratá, Santander":[7.37,-72.98],"Nueva Venecia, Ciénaga Grande":[10.8,-74.55],"Villa del Rosario, Norte de Santander":[7.83,-72.47],"Santa Fe de Ralito, Córdoba":[8.17,-76.06],"Bellavista, Bojayá, Chocó":[6.55,-76.98],"Bahía Portete, La Guajira":[12.2,-71.95],"Soacha, Cundinamarca":[4.58,-74.22],"Bojayá, Chocó":[6.5,-76.95],"Catatumbo, Norte de Santander":[8.7,-73.05],"Banco de Arena, Cúcuta":[7.98,-72.6],"Toribío, Cauca":[2.95,-76.27],"Sabana de Bogotá":[4.71,-74.07],"El Socorro, Santander":[6.47,-73.26],"Mariquita, Tolima":[5.2,-74.89],"Puente de Boyacá":[5.45,-73.36]};
+const REG={"Palonegro, Santander":"Santander","San Vicente de Chucurí, Santander":"Santander","Suratá, Santander":"Santander","Ciénaga, Magdalena":"Magdalena y Ciénaga Grande","Aracataca, Magdalena":"Magdalena y Ciénaga Grande","Nueva Venecia, Ciénaga Grande":"Magdalena y Ciénaga Grande","Bogotá":"Bogotá","Mosquera, Cundinamarca":"Sabana de Bogotá","Soacha, Cundinamarca":"Sabana de Bogotá","Marquetalia, Planadas, Tolima":"Sur del Tolima","Alto Sinú, Córdoba":"Córdoba y Urabá","Santa Fe de Ralito, Córdoba":"Córdoba y Urabá","Apartadó, Antioquia":"Córdoba y Urabá","San José de Apartadó, Antioquia":"Córdoba y Urabá","Urabá, Antioquia":"Córdoba y Urabá","Tibú, Catatumbo":"Catatumbo","La Gabarra, Tibú":"Catatumbo","Catatumbo, Norte de Santander":"Catatumbo","Villa del Rosario, Norte de Santander":"Cúcuta y frontera","Banco de Arena, Cúcuta":"Cúcuta y frontera","Segovia, Antioquia":"Nordeste antioqueño","Machuca, Segovia, Antioquia":"Nordeste antioqueño","Dabeiba, Antioquia":"Occidente antioqueño","Medellín, Antioquia":"Medellín","Santo Domingo, Cauca":"Norte del Cauca","Toribío, Cauca":"Norte del Cauca","Mapiripán, Meta":"Meta y Guaviare","San Vicente del Caguán, Caquetá":"Caquetá","El Salado, El Carmen de Bolívar":"Montes de María","Bellavista, Bojayá, Chocó":"Medio Atrato, Chocó","Bojayá, Chocó":"Medio Atrato, Chocó","Bahía Portete, La Guajira":"Alta Guajira","Sabana de Bogotá":"Sabana de Bogotá","El Socorro, Santander":"Santander","Mariquita, Tolima":"Norte del Tolima","Puente de Boyacá":"Boyacá"};
+let MAPMODE=false,EXPLORE=false;
+function LIST(){if(!EXPLORE)return S.line;const m=S.mazo||CARDS[0].tema;return CARDS.map((_,i)=>i).filter(i=>m==="Todas"||CARDS[i].tema===m).sort((a,b)=>CARDS[a].y-CARDS[b].y||a-b)}
+function bigTitle(){$("big-t").textContent=EXPLORE?`Todas las fichas del mazo · ${LIST().length}`:`Línea del tiempo · ${S.line.length} fichas`}
+function setExplore(e){EXPLORE=e;$("big-explore").textContent=e?"Ver mi partida":"Explorar todas las fichas";$("map-route").checked=!e;window._selId=undefined;$("map-info").hidden=true;bigTitle();document.querySelector("#big .hint").textContent=e?"Fichas numeradas por fecha, de la más antigua a la más reciente. Toque una para ver su Cara B.":"Toque una ficha para ver su Cara B. Las flechas unen la ficha 1 con la 2, la 2 con la 3…";if(e&&!MAPMODE)setMode(true);else if(MAPMODE)drawMap();$("big-mode").hidden=e}
+function setMode(m){MAPMODE=m;$("big-grid").hidden=m;$("mapzone").hidden=!m;$("rt-wrap").hidden=!m;$("big-mode").textContent=m?"Ver cuadrícula":"Ver mapa";
+  document.querySelector("#big .hint").textContent=m?"Toque una ficha para ver su Cara B. Las flechas unen la ficha 1 con la 2, la 2 con la 3…":"Toque una ficha para leer su explicación.";
+  if(m)drawMap();else bigLayout()}
+function regionOf(g){const la=g[0],lo=g[1];
+  if(lo<-30){if(la>=25)return lo>-90?"Este de Norteamérica":"Oeste de Norteamérica";
+    if(la>=7&&lo<-82)return "México y Centroamérica";if(la>=10&&lo>=-82)return "Caribe";
+    if(la>=-1&&lo>=-80)return "Norte de Sudamérica";if(lo<-60&&la>=-25)return "Andes centrales";return "Sudamérica"}
+  if(lo<60){
+    if(la>=49.8&&lo<2)return "Islas Británicas";
+    if(la<44.5&&la>=35&&lo<3.5)return "Península Ibérica";
+    if(lo>=29.5&&la<38.5||(la<35&&lo>=20))return "Oriente Medio y Egipto";
+    if(la<35)return "África";
+    if(la<37.5)return "África";
+    if(lo>=19.5&&la<42)return "Grecia y el Egeo";
+    if(lo>=20)return "Europa oriental";
+    if(lo<8||(lo<8.5&&la<47))return "Francia y Países Bajos";
+    if(la<46.6)return "Italia";
+    return "Europa central"}
+  if(lo<95&&la<40)return "Asia del Sur";if(la<-10)return "Oceanía";return "Asia oriental"}
+function drawMap(){
+  const box=$("bigmap"),W=box.clientWidth,H=box.clientHeight;if(!W||!H)return;
+  const pts=LIST().map((id,i)=>{const d=C(id),g=GEO[d.l];return {id,i,d,g}});const showRoute=$("map-route").checked;
+  const E=pts.filter(p=>p.g);const hasMars=pts.some(p=>!p.g);
+  // Mapa de Colombia (equirectangular corregido por latitud)
+  const L0=-80.2,L1=-66.2,A0=-4.6,A1=13.0,cf=Math.cos(4*Math.PI/180),pad=10;
+  const k=Math.min((W-2*pad)/((L1-L0)*cf),(H-2*pad)/(A1-A0)),ox=(W-(L1-L0)*cf*k)/2,oy=(H-(A1-A0)*k)/2;
+  const P=(lat,lon)=>[ox+(lon-L0)*cf*k,oy+(A1-lat)*k];
+  const ring=r=>{let q="";for(let j=0;j<r.length;j+=2){const [x,y]=P(r[j],r[j+1]);q+=(j?"L":"M")+x.toFixed(1)+" "+y.toFixed(1)}return q+"Z"};
+  let nb="";for(const r of NB)nb+=ring(r);
+  let dpath="",dlab="";for(const [nm,rs] of DEPS){for(const r of rs)dpath+=ring(r)}
+  let grat="";for(let lon=-78;lon<=-68;lon+=2){const [x1,y1]=P(A1,lon),[x2,y2]=P(A0,lon);grat+=`<line class="grat" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`}
+  for(let lat=-4;lat<=12;lat+=2){const [x1,y1]=P(lat,L0),[x2,y2]=P(lat,L1);grat+=`<line class="grat" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`}
+  const [sx0,sy0]=P(A1,L0),[sx1,sy1]=P(A0,L1);
+  const disk=`<rect class="sea" x="${sx0.toFixed(1)}" y="${sy0.toFixed(1)}" width="${(sx1-sx0).toFixed(1)}" height="${(sy1-sy0).toFixed(1)}"/>`;
+  // group by proximity
+  let T=W<600?40:50;const G=4,R=Math.max(60,Math.min(90,W/14)),cls=[];
+  for(const p of pts){const rn=p.g?(REG[p.d.l]||"Colombia"):"Fuera del mapa";let c=cls.find(c=>c.rn===rn);
+    if(!c){c={rn,items:[],mars:!p.g,sx:0,sy:0};cls.push(c)}c.items.push(p);p.c=c;if(p.g){const [x,y]=P(p.g[0],p.g[1]);c.sx+=x;c.sy+=y}else{c.sx+=W-60;c.sy+=60}}
+  for(const c of cls){c.ax=c.sx/c.items.length;c.ay=c.sy/c.items.length;c.x=c.ax;c.y=c.ay}
+  for(let tries=0;tries<5;tries++){
+  for(const c of cls){c.x=c.ax;c.y=c.ay;const n=c.items.length;c.cols=n<=3?n:n<=8?Math.ceil(n/2):Math.ceil(Math.sqrt(n*1.5));c.rows=Math.ceil(n/c.cols);
+    c.w=Math.max(c.cols*T+(c.cols-1)*G+8,Math.ceil(c.rn.length*(W<600?6.4:7.0))+16);c.h=c.rows*T+(c.rows-1)*G+8+16;
+    const pl=new Set(c.items.map(p=>p.d.l));c.place=c.rn}
+  // separate clusters (rectangles)
+  for(let it=0;it<80;it++){let mv=false;for(let i=0;i<cls.length;i++)for(let j=i+1;j<cls.length;j++){const A=cls[i],B=cls[j];
+      const ox=(A.w+B.w)/2+10-Math.abs(B.x-A.x),oy=(A.h+B.h)/2+10-Math.abs(B.y-A.y);
+      if(ox>0&&oy>0){mv=true;if(ox<oy){const sgn=B.x>=A.x?1:-1;A.x-=sgn*ox/2;B.x+=sgn*ox/2}else{const sgn=B.y>=A.y?1:-1;A.y-=sgn*oy/2;B.y+=sgn*oy/2}}}
+    for(const c of cls){c.x=Math.min(Math.max(c.x,c.w/2+6),W-c.w/2-6);c.y=Math.min(Math.max(c.y,c.h/2+6),H-c.h/2-6)}
+    if(!mv)break}
+  let bad=false;for(let i=0;i<cls.length&&!bad;i++)for(let j=i+1;j<cls.length;j++){const A=cls[i],B=cls[j];if((A.w+B.w)/2+2-Math.abs(B.x-A.x)>0&&(A.h+B.h)/2+2-Math.abs(B.y-A.y)>0){bad=true;break}}
+  if(!bad||T<=26)break;T-=6}
+  $("map-pins").style.setProperty("--tt",T+"px");
+  // thumb centers
+  for(const c of cls){c.items.forEach((p,j)=>{const r=Math.floor(j/c.cols),q=j%c.cols;const gw=c.cols*T+(c.cols-1)*G;p.tx=c.x-gw/2+q*(T+G)+T/2;p.ty=c.y-c.h/2+4+r*(T+G)+T/2})}
+  let routes="";for(let i=0;i<(showRoute?pts.length-1:0);i++){const A=pts[i],B=pts[i+1];if(A.c===B.c)continue;
+    const dx=B.tx-A.tx,dy=B.ty-A.ty,L=Math.hypot(dx,dy)||1,ux=dx/L,uy=dy/L,sh=Math.min(T*.62,L/3);
+    const x1=A.tx+ux*sh,y1=A.ty+uy*sh,x2=B.tx-ux*sh,y2=B.ty-uy*sh,off=Math.min(50,L*.15)*(i%2?1:-1);
+    const mx=(x1+x2)/2-uy*off,my=(y1+y2)/2+ux*off;
+    routes+=`<path class="route" d="M${x1.toFixed(1)} ${y1.toFixed(1)}Q${mx.toFixed(1)} ${my.toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}" marker-end="url(#arr)"><title>${i+1} → ${i+2}</title></path>`}
+  // anchor ticks from real place to cluster when displaced
+  let ticks="";for(const c of cls){if(c.mars)continue;const d=Math.hypot(c.x-c.ax,c.y-c.ay);if(d>c.h/2+4)ticks+=`<line class="tick" x1="${c.ax.toFixed(1)}" y1="${c.ay.toFixed(1)}" x2="${c.x.toFixed(1)}" y2="${c.y.toFixed(1)}"/><circle class="dot" cx="${c.ax.toFixed(1)}" cy="${c.ay.toFixed(1)}" r="3"/>`;else ticks+=`<circle class="dot" cx="${c.ax.toFixed(1)}" cy="${c.ay.toFixed(1)}" r="3"/>`}
+  $("map-svg").setAttribute("viewBox",`0 0 ${W} ${H}`);
+  $("map-svg").innerHTML=`<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0 0L10 5L0 10z"/></marker></defs>${disk}${grat}<path class="nb" d="${nb}"/><path class="land" d="${dpath}"/>${ticks}${routes}`;
+  $("map-pins").innerHTML=cls.map(c=>`<div class="grp" style="left:${c.x}px;top:${c.y}px;width:${c.w}px;--t:${T}px"><div class="tg" style="grid-template-columns:repeat(${c.cols},var(--t))">${c.items.map(p=>{const im=IMG[p.d.n];return `<button class="mt ${window._selId===p.id?"on":""}" data-mt="${p.id}" aria-label="${p.i+1}. ${esc(p.d.n)}">${im?`<img src="${im.img}" alt="">`:`<span class="ph">${INI(p.d.n)}</span>`}<span class="n">${p.i+1}</span></button>`}).join("")}</div><span class="plc">${esc(c.place)}</span></div>`).join("")+"";
+}
+function showCard(id){const d=C(id),im=IMG[d.n],i=LIST().indexOf(id);const box=$("map-info");const was=box.hidden;box.hidden=false;window._selId=id;
+  box.innerHTML=`${im?`<img class="ipic" src="${im.big||im.img}" alt="${esc(d.n)}">`:""}<span class="eyebrow">${EXPLORE?"N.º":"Ficha"} ${i+1} de ${LIST().length} · ${""}${esc(d.c)}</span><span class="fyr">${Y(d.y)}</span><span class="fnm">${esc(d.n)}</span><span class="hint">${esc(d.f)} · ${esc(d.l)}</span><p>${esc(d.t)}</p>${credit(d)}<button class="mini-btn" id="map-info-close">Cerrar</button>`;
+  if(was)drawMap();else document.querySelectorAll(".mt").forEach(b=>b.classList.toggle("on",b.dataset.mt===String(id)));}
+window.addEventListener("resize",()=>{if(MAPMODE&&!$("big").hidden)drawMap()});
+document.addEventListener("change",e=>{if(e.target.id==="map-route"&&MAPMODE)drawMap()});
+function resetMapSel(){window._selId=undefined;const b=$("map-info");if(b)b.hidden=true}
+document.addEventListener("fullscreenchange",()=>setTimeout(()=>{if(MAPMODE&&!$("big").hidden)drawMap()},80));
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;
+  if(t.id==="big-mode"){setMode(!MAPMODE);return}
+  if(t.id==="big-explore"){setExplore(!EXPLORE);return}
+  if(t.id==="map-info-close"){$("map-info").hidden=true;window._selId=undefined;drawMap();return}
+  if(t.dataset.mt!==undefined){showCard(+t.dataset.mt);return}
+});
+function start(data){
+  S=(data&&data.S&&data.S.v3)?data.S:(load()||fresh(""));
+  if(window.claude?.hot?.snapshot)window.claude.hot.snapshot(()=>({S}));
+  render();
+}
+window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {});
+</script>
+
+</body></html>
